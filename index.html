@@ -13,12 +13,16 @@
 <meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
 <meta property="og:type" content="website">
 <link rel="icon" href="img/favicon.jpg">
-<style>
+
+<!-- <link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/apps.html"> -->
+<!-- <link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/apps_es.html"> -->
+
+<style type="text/css">
 *{box-sizing:border-box;}
 html, body {
 	width:100%; height:100%;
 	margin:0px; padding:0px;
-	text-align:center;
+	text-align: center;
 	font-family: Arial, sans-serif;
 	background: #f5f5f5;
 	display: flex;
@@ -31,13 +35,23 @@ html, body {
 
 /* HEADER */
 header {
-  background: #ffffff;
   padding: 15px;
-  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 header h1 {
   margin: 0;
+}
+.hero-header, .hero-header a {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/Background_WaveForm.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+/* H1 SOLO PARA SEO */
+.seo-title {
+  position: absolute;
+  left: -9999px;
 }
 
 /* NAV */
@@ -59,6 +73,9 @@ nav a {
   position: absolute;
   top: 15px;
   right: 20px;
+}
+.lang a{
+  color: #eee;
 }
 
 /* HERO */
@@ -83,7 +100,6 @@ nav a {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  text-align: center;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: 0.2s;
 }
@@ -117,16 +133,13 @@ nav a {
 
 /* FOOTER */
 footer {
-  text-align: center;
   padding: 20px;
   background: #222;
   color: white;
   margin-top: 30px;
 }
-footer a {
-  color: #ccc;
-  margin: 5px;
-  text-decoration: none;
+footer a{
+  color: #777;
 }
 </style>
 </head>
@@ -134,11 +147,14 @@ footer a {
 <body>
 <div id="main">
 	<div class="lang">
-		<a href="es.html">🇪🇸 ES</a>
+		<a href="index_es.html">🇪🇸 ES</a>
 	</div><!--/lang-->
 
-	<header>
-		<h1>DPCproducciones</h1>
+	<header class="hero-header">
+		<div class="header-content">
+			<h1 class="seo-title">DPCproducciones - Android Apps</h1>
+			<img src="img/DPCproducciones_Logo.png" alt="DPCproducciones logo">
+		</div>
 		<nav>
 			<a href="index.html">Home</a>
 			 • <a href="apps.html">Apps</a>
@@ -148,14 +164,14 @@ footer a {
 	</header>
 
 	<section class="hero">
-		<h2>Android Apps & Games</h2>
+		<h2>Android Apps</h2>
 		<p><img src="img/DPCproducciones_Logo.jpg" width="200px"></p>
-		<p>Simple, useful and fun apps</p>
-		<p>Discover our apps available on Google Play</p>
+		<p>Simple, useful and fun apps.</p>
 	</section>
-<p style="margin-top:20px;">
-  <a class="button" href="apps.html">View All DPCproducciones Apps</a>
-</p>
+
+	<h3 style="margin-top:20px;">Discover our apps</h3>
+	<a class="button" href="apps.html">View All DPCproducciones Apps</a>
+
 	<main  class="container">
 		<div class="grid" style="margin-top:50px;">
 			<!-- APP CARD -->
@@ -171,8 +187,8 @@ footer a {
 			</div><!--/card-->
 			<div class="card">
 			<h3>🎨 Art & Music</h3>
-			<p>Painting, drawing and galleries.</p>
-			<a class="button" href="apps.html">View</a>
+			<p>Music, painting, drawing and galleries.</p>
+			<a class="button" href="apps.html">Enjoy</a>
 			</div><!--/card-->
 		</div><!--/grid-->
 
@@ -180,14 +196,13 @@ footer a {
 		<h2>Applications available on Google Play</h2>
 		<p><a href="https://play.google.com/store/apps/dev?id=5913401738369811930" target="_blank">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="" alt="Get it on Google Play"></a></p>
-		<p>📲 You can explore all our apps on Google Play</p>
+		<p>📲 You can check all our apps on Google Play.</p>
 		<br>
 		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank">Visit our Blogger site</a></p>
 	</main ><!--/container-->
 </div><!--/main-->
 
 <footer>
-	<p><img src="img/DPCproducciones_Logo.png" width="200px" alt="DPCproducciones logo"></p>
 	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
 	<a href="privacy.html">Privacy Policy</a> |
 	<a href="contact.html">Contact</a>
