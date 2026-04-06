@@ -1,8 +1,785 @@
-<h1>Our Apps</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Explore our Android applications on Google Play:</p>
+<title>DPCproducciones | Android Apps</title>
 
-<ul>
-  <li><a href="#">App 1</a></li>
-  <li><a href="#">App 2</a></li>
-</ul>
+<meta name="description" content="DPCproducciones develops Android apps, games and utilities available on Google Play. Discover our apps.">
+<meta name="keywords" content="Android apps, games, Google Play, DPCproducciones">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/apps.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/apps.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/apps_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/apps.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="DPCproducciones - Android Apps">
+<meta property="og:description" content="Free Android apps: games, education and culture.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dpcproducciones.github.io/apps.html">
+
+<link rel="icon" href="img/favicon.jpg">
+
+<style type="text/css">
+*{box-sizing:border-box;}
+html, body {
+	width:100%; height:100%;
+	margin:0px; padding:0px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	background: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh !important;
+}
+#main {
+	flex-grow: 1;
+}
+
+/* HEADER */
+header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+header h1 {
+  margin: 0;
+}
+.hero-header, .hero-header a {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/Background_WaveForm.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+/* H1 SOLO PARA SEO */
+.seo-title {
+  position: absolute;
+  left: -9999px;
+}
+
+/* NAV */
+nav {
+  margin-top: 10px;
+}
+nav a:hover {
+  color: #2196F3;
+}
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* LANGUAGE */
+.lang {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.lang a{
+  color: #eee;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  width: 260px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100px;
+}
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+.separator {
+  width: 100%;
+  margin: 20px 0 10px;
+}
+
+/* BUTTON */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 6px;
+}
+button:hover {
+  background: #2196F3;
+  color: white;
+}
+.filter-btn {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.filter-btn.active {
+  background: #2196F3;
+  color: white;
+}
+
+/* CATEGORY */
+.category {
+  margin-top: 10px;
+}
+.category h2 {
+  background: #e3f2fd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
+footer a{
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+<div id="main">
+	<div class="lang">
+		<a href="apps_es.html">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header class="hero-header">
+		<div class="header-content">
+			<h1 class="seo-title">DPCproducciones - Android Apps</h1>
+			<a href="index.html"><img src="img/DPCproducciones_Logo.png" alt="DPCproducciones logo"></a>
+		</div>
+		<nav>
+			<a href="index.html">Home</a>
+			 • <a href="apps.html" style="color: #777;">Apps</a>
+			 • <a href="privacy.html">Privacy</a>
+			 • <a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+<main class="container">
+
+	<h2>Our Apps</h2>
+	<p>Discover all our Android apps</p>
+	<!--<input type="text" id="search" placeholder="Search apps..." style="padding:10px; width:80%; max-width:400px; margin:20px auto; display:block;">-->
+
+	<div>
+		<button class="filter-btn active" onclick="filterApps('all', this)">All Apps</button>
+		<button class="filter-btn" onclick="filterApps('literature', this)">Literature</button>
+		<button class="filter-btn" onclick="filterApps('artgallery', this)">Art Gallery</button>
+		<button class="filter-btn" onclick="filterApps('games', this)">Games</button>
+		<button class="filter-btn" onclick="filterApps('music', this)">Music & Drawing</button>
+		<button class="filter-btn" onclick="filterApps('utilities', this)">Utilities</button>
+		<button class="filter-btn" onclick="filterApps('maps', this)">Maps</button>
+	</div>
+
+  <!-- LITERATURE -->
+  <div class="category" data-category="literature">
+    <h2>📚 Literature</h2>
+    <div class="grid">
+
+      <div class="card" data-category="literature">
+        <h3>Edgar Allan Poe 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/ZoWd_g7JPZTLRmFEJH8AO7JotUnxYmGlOnztTnTzlun9XtIyXMP9TvNWO5a78yzyg8M=w240-h480" width="100px"
+			alt="Edgar Allan Poe stories app for Android gothic horror literature">
+        <p>Read classic gothic horror tales in a simple offline reader designed for literature lovers.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.WritersPoe" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Jules Verne 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/wae88KrXqqskIl0gpyorSfvxBisGSITdR7kUXa1N75KD09m30jP9XKNRwpDLI0X93g=w240-h480" width="100px"
+			alt="Jules Verne books app for Android science fiction adventure novels">
+        <p>Explore science fiction and adventure novels by Jules Verne with an easy-to-use reading experience.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.WritersJulioVerne" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="separator">Spanish Apps</div>
+
+      <div class="card" data-category="literature">
+        <h3>Edgar Allan Poe 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/-v9O0tAjFD4Sn0K45IFeNbIasLVy1p_MEdprvBV6oe-USn1Ddq-NrVkWc-6vTXXJJ87F=w240-h480" width="100px"
+			alt="Edgar Allan Poe books app Android gothic horror stories in Spanish">
+        <p>Gothic horror stories in Spanish by Edgar Allan Poe in a simple and offline reading app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresPoe" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Julio Verne 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/tBSr0X6hgTF5giUhOHv1N8xSOa7fkugRIxMzI1RKqeZls-H8drDh-Omr8nd-Sp4Wobc=w240-h480" width="100px"
+			alt="Jules Verne books Android app science fiction novels in Spanish">
+        <p>Jules Verne novels in Spanish in an application optimized for comfortable reading at any time.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresJulioVerne" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Miguel de Cervantes 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/0vfX47izkOwwev_1s2AgcoNru8q9o6tcZl6fXbONhSIh7E7KadwHZ5oQq1PxSTxr-jA=w240-h480" width="100px"
+			alt="Miguel de Cervantes books app Android classic Spanish literature">
+        <p>Essential works of Spanish literature, Don Quixote of La Mancha and his companion Sancho Panza.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresCervantes" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Dante Alighieri 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/UuvzsXctUhV8QroPwX6LtQLWrHrmXluOAkAJIBYsTVv0JJyAXjJg2-b8bEiDpy8mwdxM=w240-h480" width="100px"
+			alt="Dante Alighieri books app Android medieval literature Divine Comedy in Spanish">
+        <p>Discover Dante in Spanish in the Divine Comedy with a clear and accessible reading app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresDante" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Bécquer 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/I074CZfUxD6myjo5b9lPvNqU7gzdQ85IFqZ8fVprKVhrzL2YfeKkb0dC624YS9tQPw=w240-h480" width="100px"
+			alt="Gustavo Adolfo Becquer poems app Android Spanish Romanticism">
+        <p>Bécquer's Rhymes and Legends in Spanish in an app designed for lovers of romantic poetry.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresBecquer" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Grimm brothers 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/BCDz5nI7UHGQJU7JM6QMqVpDo7YReae3NbnjIujT9WSHAMCg2meh-rGOKXuLXl8upIg=w240-h480" width="100px"
+			alt="Brothers Grimm fairy tales app Android classic folk tales in Spanish">
+        <p>Enjoy classic folk tales in Spanish by the Brothers Grimm in a collection ideal for all ages.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresGrimm" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Oscar Wilde 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/lDkeBl34bJKu0WOzA08vkLOKxt_DtDTFCcu6ZgcCQ7WxgJ9xY5CSgbhqvtUrLikmePZp=w240-h480" width="100px"
+			alt="Oscar Wilde books app Android aesthetic literature short stories and novels in Spanish">
+        <p>Read the works of Oscar Wilde in Spanish with an app focused on comfortable reading.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresOscarWilde" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Charles Dickens 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/ZbP1pnwKTQj0s7hDhXTbCxqOcou9p4YqH2ZT7Ddt-Wb5oI9VPoHxuuS4emZXdZGHIied=w240-h480" width="100px"
+			alt="Charles Dickens books app Android classic Victorian novels in Spanish">
+        <p>Explore the Victorian novels of Charles Dickens in Spanish in an optimized and distraction-free format.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresDickens" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Andersen 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/FmEkTw4XfA6sQiG6DUmLWKWBxw1hDA634_6Zlz63973WcXmLVE0Bm7sOctV-ga4uTtY=w240-h480" width="100px"
+			alt="Hans Christian Andersen fairy tales app Android classic children's stories in Spanish">
+        <p>Enjoy classic Andersen fairy tales in Spanish with a lightweight app perfect for quick reading.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresAndersen" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Federico García Lorca 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/oO-9wtOxkOQwjQs1kInbjrcQIFWqX2O8Jnm3kdt5S1n9bgrCIXnOaiIO6649z6mUMNI=w240-h480" width="100px"
+			alt="Federico Garcia Lorca books Android app modern Spanish literature">
+        <p>Discover Lorca's popular poetry in Spanish with an intuitive app for reading on mobile devices.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresLorca" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>H.G. Wells 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/wRuqlU-kiZ9GuySNFeAzFKfXeFRJa0icP-OGb8wytPuwrijaZnHU_u4e4-1TFQ3Q-5k=w240-h480" width="100px"
+			alt="HG Wells books app Android classic science fiction in Spanish">
+        <p>Travel to the future with H.G. Wells' science fiction stories in Spanish with a simple and functional app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresHGWells" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Fernando de Rojas 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/TxoCKRs_con_-Ws2oUbO7EvG__kaRwDbCYW6_3esqt_4N1n9EhQwbH9MPsX4UWff03g6=w240-h480" width="100px"
+			alt="Fernando de Rojas libros app Android literatura renacentista española">
+        <p>Celestina or Tragicomedy of Calisto and Melibea in Spanish for lovers of classical literature.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresFernandoRojas" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Lewis Carroll 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/e8eojJVsUVvqfoLAFxW1F2gk2b553ppTOrP3gdopv-N6rjLjA_7gtMMW5IDROdsz7Q=w240-h480" width="100px"
+			alt="Lewis Carroll books app Android fantasy Alice in Wonderland in Spanish">
+        <p>Immerse yourself in the world of Alice in Wonderland in Spanish with a clear and easy-to-use reading app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresLewisCarroll" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Medieval Literature 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/H-KylGRFG36XsrDBfxLx9yjMGwOOoS9jb936ohj_v420oksLsqMWVxP7w_9uXDUjl9I=w240-h480" width="100px"
+			alt="Anonymous medieval Spanish literature Android app classic medieval Spanish texts">
+        <p>Discover anonymous medieval works in Spanish with this unique collection for your mobile device.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresAnonimos" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Francisco de Quevedo 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/KDH-qUlwQEeUrbXHQqJIz6m007uMw-AJSOi6OqAeSMOQOlK1G0uaeNLsD3scZzyaCyg1=w240-h480" width="100px"
+			alt="Francisco de Quevedo books app Android Spanish baroque poetry">
+        <p>Enjoy Quevedo's satirical and baroque poetry in Spanish in a convenient digital format.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresQuevedo" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Calderón de la Barca 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/UhvLn_RB-KQq5HJdzJwdvh6kU3SWRAgL9OUe_fnlYj76HId4wr2Xv9stSc_zK7PBRWc=w240-h480" width="100px"
+			alt="Calderon de la Barca plays app Android Spanish Baroque theatre">
+        <p>Classical Spanish theatre by Calderón de la Barca with an app optimized for continuous reading.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresCalderon" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>José de Espronceda 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/DdV1Jo9iGCawn-39YPzKkSKos9pILQbuHslUPjpE2OeROtdR3bht2w0SLg_qzfD5eEiU=w240-h480" width="100px"
+			alt="Jose de Espronceda poems app Android Spanish Romanticism">
+        <p>Access the romantic poetry of José de Espronceda in Spanish with a lightweight and functional app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresEspronceda" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Lope de Vega 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/7Q9PgOyfU1CMYycMoGJB2pc0H4NMPfVqWn8ON8D56I14pssdRii5ob2iycaBLGdTYQ=w240-h480" width="100px"
+			alt="Lope de Vega plays app Android Golden Age theatre in Spanish">
+        <p>Discover the best plays of the Golden Age in Spanish with an app designed for easy reading.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresLopedeVega" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Garcilaso de la Vega 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/3t-cWRaqw2j3AcxLHZhEmmfPnFEJggVK5DZGEIXNOV7nq0AmoS8FqqYJAN8q8dG4fA=w240-h480" width="100px"
+			alt="Garcilaso de la Vega poems Android app Renaissance poetry in Spanish">
+        <p>Read Garcilaso's Renaissance poetry in Spanish in an app designed for lovers of the classics.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresGarcilaso" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Leopoldo Alas 'Clarín' 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/rotznXLqKDNjEYD7VcN6f1nY5HF0Mj8dkPBoinHlu8GPPFblr_4dAwPZi7gERFn5rg=w240-h480" width="100px"
+			alt="Leopoldo Alas 'Clarin' books app Android Spanish realistic novel">
+        <p>Explore the Spanish realist novels of Leopoldo Alas 'Clarín' in an intuitive reading app.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresClarin" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Luís de Góngora 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/JSNF3t4NDH3flFfMIhrMiyNiuKNXKGf9ZDoypFLtInoMwQNBmdzGNBn3W9TMSw7IsHg=w240-h480" width="100px"
+			alt="Luis de Gongora poetry app Android baroque Spanish">
+        <p>Access Góngora's ornate Baroque poetry in Spanish with an optimized digital format.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresGongora" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="literature">
+        <h3>Ludovico Ariosto 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/zoaSFAoSlkkO9Aet5VjZeIXvPCJMk4CPsSmyJlqne9FB2_XRu6g3jVRD_ruKcHCmHKeBo9oYONkIHt6jhL0jjg=w240-h480" width="100px"
+			alt="Ludovico Ariosto poetry app Android epic chivalric Renaissance novel in Spanish">
+        <p>Read the Orlando Furioso adventures by Ariosto in Spanish in this masterpiece of chivalric epic poetry.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.EscritoresAriosto" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ART GALLERY -->
+  <div class="category" data-category="artgallery">
+    <h2>🎨 Art Gallery</h2>
+    <div class="grid">
+
+      <div class="card" data-category="artgallery">
+        <h3>Van Gogh</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Vincent van Gogh Art Gallery app Android Post-Impressionism paintings collection">
+        <p>Explore vibrant Post-Impressionist masterpieces with Van Gogh’s most iconic paintings collection.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresVanGogh" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Leonardo da Vinci</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Leonardo da Vinci Art Gallery app Android Renaissance paintings collection">
+        <p>Discover Renaissance genius through Leonardo da Vinci’s art, sketches, and timeless masterpieces.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresDaVinci" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Gustav Klimt</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Gustav Klimt Art Gallery app Android Art Nouveau paintings collection">
+        <p>Enjoy elegant Art Nouveau works by Gustav Klimt, featuring gold, symbolism, and decorative beauty.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresKlimt" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Caravaggio</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Caravaggio Art Gallery app Android Baroque paintings collection">
+        <p>Experience dramatic Baroque realism with Caravaggio’s powerful use of light and shadow.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresCaravaggio" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Rembrandt</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Rembrandt Art Gallery app Android Baroque paintings collection">
+        <p>Discover Rembrandt’s Baroque mastery with expressive portraits and rich light contrasts.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresRembrandt" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Alphonse Mucha</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Alphonse Mucha Art Gallery app Android Art Nouveau paintings collection">
+        <p>Explore Alphonse Mucha’s Art Nouveau style with decorative illustrations and symbolic beauty.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresMucha" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Hieronymus Bosch</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Hieronymus Bosch Art Gallery app Android Gothic paintings collection">
+        <p>Enter Bosch’s surreal world of Gothic imagination, filled with symbolic and fantastical scenes.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresBosco" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Pierre-Auguste Renoir</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Pierre-Auguste Renoir Art Gallery app Android Impressionism paintings collection">
+        <p>Enjoy Renoir’s Impressionist paintings full of light, color, and everyday joyful moments.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresRenoir" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Diego Velázquez</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Diego Velazquez Art Gallery app Android Baroque paintings collection">
+        <p>Discover Velázquez’s Baroque masterpieces with royal portraits and masterful realism.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresVelazquez" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Paul Cezanne</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Paul Cezanne Art Gallery app Android Post-Impressionism paintings collection">
+        <p>Explore Cézanne’s Post-Impressionist art bridging classic perspective and modern painting.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresCezanne" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Francisco de Goya</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Francisco de Goya Art Gallery app Android Romanticism paintings collection">
+        <p>Experience Goya’s powerful Romanticism with dramatic, emotional, and historical artworks.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresGoya" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Joaquín Sorolla</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Joaquin Sorolla Art Gallery app Android Post-Impressionism paintings collection">
+        <p>Enjoy Sorolla’s luminous paintings capturing Mediterranean light and everyday life scenes.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresSorolla" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Peter Paul Rubens</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Peter Paul Rubens Art Gallery app Android Baroque paintings collection">
+        <p>Discover Rubens’ Baroque dynamism with rich colors, movement, and mythological scenes.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresRubens" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Édouard Manet</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Edouard Manet Art Gallery app Android Impressionism paintings collection">
+        <p>Explore Manet’s modern vision bridging realism and Impressionism with bold compositions.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresManet" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>El Greco</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="El Greco Art Gallery app Android Renaissance paintings collection">
+        <p>Discover El Greco’s unique Renaissance style with elongated figures and spiritual intensity.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresGreco" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Camille Pissarro</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Camille Pissarro Art Gallery app Android Impressionism paintings collection">
+        <p>Enjoy Pissarro’s Impressionism capturing rural life, landscapes, and natural light effects.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresPissarro" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Gustave Doré</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Gustave Dore Art Gallery app Android Romanticism paintings collection">
+        <p>Explore Doré’s dramatic Romantic illustrations with detailed engravings and epic scenes.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresDore" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Katsushika Hokusai</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Katsushika Hokusai Art Gallery app Android Japanese Ukiyo-e paintings collection">
+        <p>Discover Hokusai’s Ukiyo-e prints featuring landscapes, waves, and Japanese culture.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresHokusai" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Edgar Degas</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Edgar Degas Art Gallery app Android Impressionism paintings collection">
+        <p>Enjoy Degas’ Impressionist works focused on movement, dancers, and everyday life scenes.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresDegas" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Paul Gauguin</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Paul Gauguin Art Gallery app Android Post-Impressionism paintings collection">
+        <p>Explore Gauguin’s Post-Impressionism with bold colors and exotic symbolic compositions.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresGauguin" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="artgallery">
+        <h3>Ingres</h3>
+        <img src="https://play-lh.googleusercontent.com/xXpK1T98R6nKqqk5BzNktN4sOqXkSc1UCJnwobK8BnHNnIAOtjpAGpTML_eAEk_K3PxraTEnQAe_-thgq4u7ew=w240-h480" width="100px"
+			alt="Jean-Auguste-Dominique Ingres Art Gallery app Android Neoclassicism paintings collection">
+        <p>Discover Ingres’ Neoclassical art with refined lines, portraits, and classical inspiration.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PintoresIngres" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+  <div class="category" data-category="music">
+    <h2>🎵 Play Music and Drawing</h2>
+    <div class="grid">
+
+      <div class="card" data-category="music">
+        <h3>Paint & Draw Canvas 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/o7lBdt5PM8zbLH4B6lz5b31MwXlqKHN2u3FaY7SPrpe2OMVyapVpzm93hzDz7NXcg0OeADm9B1EgGxCi34vd=w240-h480" width="100px"
+			alt="Paint and Draw app Android drawing canvas digital art">
+        <p>Create drawings easily with a simple canvas designed for quick sketches and creativity.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.DibujoLibre" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="music">
+        <h3>Piano Tutorial 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/LkgX53nYKQT8I0K-AeRvg4afQ3fabprScbLHaURq2R0RgwthOVuUWf9wB-dBeukzHm4=w240-h480" width="100px"
+			alt="Piano tutorial app Android learn piano keyboard">
+        <p>Practice piano with a virtual keyboard and guided learning features on your mobile device.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.PianoTutorial" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="music">
+        <h3>Virtual Battery 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/FdCFihNNK9AEbCU53XmYd2XCzEQeh-bkMnXMS_zoGVryLY_JNGlU94eQ7gRsp-ppJCwS-M68BUBU_9noqG9_cQ=w240-h480" width="100px"
+		alt="Virtual drum kit app Android play drums simulator">
+        <p>Play drums on your mobile device with a realistic and responsive virtual drummer kit.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.BateristaVirtual" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GAMES -->
+  <div class="category" data-category="games">
+    <h2>🎮 Games</h2>
+    <div class="grid">
+
+      <div class="card" data-category="games">
+        <h3>Sokobandroid 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/c52AXaMtQcBApWMKTuncrzLZBxwbnhGswin_owsu7QR8RQVnvjsbGQis69Oe_M4aSxvpY8k-2rNabjTs-6hbIA=w240-h480" width="100px"
+			alt="Sokobandroid puzzle game Android sokoban logic game">
+        <p>Solve classic Sokoban puzzles by moving boxes strategically across challenging levels.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.Sokobandroid" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="games">
+        <h3>Number Games 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/46uXBQY6CGjYGhGYOW0zLbR1w0f2u3ZBe7G-z9V6veKD0iPI33r02SQWgUVmr1g0OocD=w240-h480" width="100px"
+			alt="Number Games math app Android brain training numbers">
+        <p>Improve your math skills with fun number-based mini games and challenges.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.NumbersGames" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="games">
+        <h3>Origami 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/4r0bUt4v--Roz8XNncvPJxMIevULz91ceInkmNSzhrstrqmc3IXx_XhSfN22hWZAte-Qi4qvdHHky13_lXEeTg=w240-h480" width="100px"
+			alt="Origami folding app Android paper folding tutorials">
+        <p>Learn how to create origami figures step by step with easy visual paper folding guides.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.Origami" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="separator">Spanish Apps</div>
+
+      <div class="card" data-category="games">
+        <h3>MultiJuegos 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/PLNZbk3r3yW4RHyzpsBS6N3UBAjMmfIIFiHI8H1AACWhq1WfmuvWHTrvbcqbZRKQsHjjD3fvIzMWdbfh_XQb6w=w240-h480" width="100px"
+			alt="MultiGames classic Android games various minigames in Spanish">
+        <p>Enjoy several classic games in Spanish in a single app designed for quick entertainment.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.MultiJuegos" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="games">
+        <h3>LetNum 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/7U-3FlEIW5GWgr7mSUqz8uAMmD3hWcz--kRLHeqs75-ICaPsxQW2qLtaVpQW2y8zSHE=w240-h480" width="100px"
+			alt="LetNum educational Android games with letters and numbers in Spanish">
+        <p>Learn by playing with letters and numbers in a collection of educational games in Spanish.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.JuegosLetrasyNumeros" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- UTILITIES -->
+  <div class="category" data-category="utilities">
+    <h2>🛠️ Utilities</h2>
+    <div class="grid">
+
+      <div class="card" data-category="utilities">
+        <h3>Inventory Manager 🇬🇧</h3>
+        <img src="https://play-lh.googleusercontent.com/swKBcu7QpzYQGlrd3mv0rXgL2lW6Q-wdsOss_5bqp7dOzNxqgsbMbni1mDUjf_u86IAEGyBBpgCSq_mTUtdl=w240-h480" width="100px"
+			alt="Inventory manager app Android stock and collection tracker">
+        <p>Organize and manage your personal stock items efficiently with Inventory and Collection Manager.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.Inventario" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="utilities">
+        <h3>Baby Vacunas 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/I8BPxxvKmEbKIDZhHd02GoYHds9d45tjTCtSMkyv67QhkTOp6K9Ryddih0HeWcltS5Q=w240-h480" width="100px"
+			alt="Baby Vaccinations information on the vaccination schedule in Spain for babies">
+        <p>Check vaccination schedules for babies in Spain with an informative and simple tool.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.VacunasInfantiles" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAPS -->
+  <div class="category" data-category="maps">
+    <h2>🌎️ Maps</h2>
+    <div class="grid">
+
+      <div class="card" data-category="maps">
+        <h3>Barcelona Map 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/L8ir7kLKlMGiDS6gGYexGxT24T7YkK9VZR-qtVZxFDB_be5JwCH7UAoY6AfGaxQSNWpzvw3HM-Zb0fH3xPDe9A=w240-h480" width="100px"
+		alt="Barcelona Map app for Android offline city maps and travel guide">
+        <p>Get around Barcelona with public transport maps without needing an internet connection.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.BarcelonaMaps" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="maps">
+        <h3>Madrid Map 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/szB0xk7R3wtpzXDtNz4-7QilO4rlcqp6WPQYFjeVZzXA4m-w_bLGbXpf-FTelg7JMHw=w240-h480" width="100px"
+		alt="Madrid Map app for Android city maps without internet connection">
+        <p>Explore Madrid with public transport maps without needing an internet connection.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.MadridMaps" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+      <div class="card" data-category="maps">
+        <h3>Cicloturismo Madrid 🇪🇦</h3>
+        <img src="https://play-lh.googleusercontent.com/7v-df6yV0X-BG3CDBsm1sgFpUHclvnMmZ5n0qMU08Y2CDljFDe3_YE2tfbwiat1Szm32YiPacSTaTlmg-EAopt8=w240-h480" width="100px"
+		alt="Madrid Cycling App for Android routes and maps for cyclists in Spanish">
+        <p>Discover cycling routes in Madrid and its surroundings with detailed maps of the paths in Spanish</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.DPCproducciones.CicloturismoMadrid" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" width="120px" alt="Get it on Google Play"></a></p>
+      </div>
+
+    </div>
+  </div>
+
+</main ><!--/container-->
+</div><!--/main-->
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="privacy.html">Privacy Policy</a> |
+	<a href="contact.html">Contact</a>
+</footer>
+
+<script type="text/javascript">
+window.onload = function() {
+  filterApps('all', document.querySelector('.filter-btn'));
+};
+
+function filterApps(category, button) {
+  // BOTONES ACTIVOS
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  if(button) button.classList.add('active');
+
+  const cards = document.querySelectorAll('.card');
+  const categories = document.querySelectorAll('.category');
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+	// MOSTRAR / OCULTAR CATEGORÍAS
+	categories.forEach(cat => {
+		const visibleCards = Array.from(cat.querySelectorAll('.card'))
+			.filter(card => card.style.display !== 'none');
+	cat.style.display = visibleCards.length ? 'block' : 'none';
+	});
+}
+
+
+// BUSCADOR
+/*document.getElementById('search').addEventListener('keyup', function() {
+  const value = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  const categories = document.querySelectorAll('.category');
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(value) ? 'block' : 'none';
+  });
+  categories.forEach(cat => {
+    const visibleCards = cat.querySelectorAll('.card:not([style*="display: none"])');
+    cat.style.display = visibleCards.length ? 'block' : 'none';
+  });
+});*/
+</script>
+</body>
+</html>
