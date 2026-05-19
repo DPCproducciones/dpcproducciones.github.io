@@ -34,101 +34,31 @@
 
 <link rel="icon" href="img/favicon.jpg">
 
+<link rel="stylesheet" href="css/dpcproduccionesgithub.css">
 <style type="text/css">
-*{box-sizing:border-box;}
-html, body {
- width:100%; height:100%;
- margin:0px; padding:0px;
- text-align: center;
- font-family: Arial, sans-serif;
- background: #f5f5f5;
- display: flex;
- flex-direction: column;
- min-height: 100vh !important;
-}
-p{margin:10px;}
-.container {
- flex-grow: 1;
- background: radial-gradient(circle at top, #e3f2fd, #ffffff);
-}
-
-/* HEADER */
-header {
- padding: 5px;
- background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('img/Background_WaveForm.jpg');
- background-size:cover; background-position:center;
-}
-/* H1 SEO */
-.seo-title {
- margin:0;
- position:absolute;
- left:-9999px;
-}
-
-/* LANGUAGE */
-.lang {
- position: absolute;
- top: 15px;
- right: 20px;
-}
-.lang a{
- color: #eee;
-}
-
-/* NAV */
-nav {
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- gap: 0px;
-}
-nav a {
- margin: 10px;
- text-decoration: none;
- font-weight: bold;
- color: white;
-}
-nav a:hover {
- color: #777;
-}
-
-/* MAIN */
-main {
- max-width: 1200px;
- margin: auto;
-}
-#DPCproducciones_LogoBig {
+#DPCproducciones_Cine {
  width:100%;
- max-width:500px;
+ max-width:250px;
  border-radius:10px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
  box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
 #TecnicoAV_Logo {
  width:100%;
- max-width:250px;
+ max-width:150px;
  border-radius:5px;
  box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
-
-/* INFO BLOCK */
-.info-block{
- margin:10px;
- padding:10px;
- margin-top:40px;
- border-radius:10px;
- background:white;
- box-shadow:0 3px 12px rgba(0,0,0,0.2)
- line-height:1.5;
+.card{
+ border-top: 4px solid #bbb;
 }
-
-/* FOOTER */
-footer {
- padding: 20px;
- background: #222;
- color: white;
-}
-footer a{
- color: #777;
+.card:hover {
+ transform: none;
 }
 </style>
 </head>
@@ -143,7 +73,7 @@ footer a{
 
 	<header>
 		<h1 class="seo-title">DPCproducciones TecnicoAV | Contact</h1>
-		<img src="img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px">
+		<a href="index.html"><img src="img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
 		<nav>
 			<a href="index.html">Home</a>
 			<a href="tecnicoav.html">TecnicoAV</a>
@@ -154,20 +84,24 @@ footer a{
 	</header>
 
 	<main>
-		<div class="info-block">
-			<h2>Contact</h2>
-			<p>If you have questions, suggestions, technical issues, or hiring proposals related to our audiovisual content or Android applications, feel free to contact us. We will try to respond as soon as possible.</p>
-			<p><b>✉ Email:<br><a href="mailto:info_dpcproducciones@yahoo.com">info_dpcproducciones@yahoo.com</b></a></p><br>
-		</div><!--/info-block-->
-		
-		<br><p><img id="DPCproducciones_LogoBig" src="img/DPCproducciones_LogoBig.jpg" alt="DPCproducciones TecnicoAV"></p>
-		
-		<div class="info-block">
-			<h2>About us</h2>
-			<p>DPCproducciones develops Android applications, audiovisual technical resources, tutorials, and professional educational content focused on education, culture, and entertainment.</p>
-			<p>TecnicoAV is the audiovisual technical division of DPCproducciones, focused on professional audiovisual systems, live events, sound engineering, lighting, broadcast workflows, stage technology, QLab programming, AV maintenance, and technical training resources.</p>
-			<br><p><a href="tecnicoav.html"><img id="TecnicoAV_Logo" src="img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></a></p>
-		</div><!--/info-block-->
+		<h2>Contact</h2>
+		<div class="grid">
+			<div class="card">
+				<h3>Email</h3>
+				<p>If you have questions, suggestions, technical issues, or hiring proposals related to our audiovisual content or Android applications, feel free to contact us. We will try to respond as soon as possible.</p>
+				<p><b>✉ Email:<br><a href="mailto:info_dpcproducciones@yahoo.com">info_dpcproducciones@yahoo.com</b></a></p><br>
+			</div><!--/card-->
+		</div><!--/grid-->
+		<br>
+		<div class="grid">
+			<div class="card">
+				<h3>About us</h3>
+				<p><img id="DPCproducciones_Cine" src="img/DPCproducciones_Cine.jpg" alt="DPCproducciones film logo"></p>
+				<p>DPCproducciones develops Android applications, audiovisual technical resources, tutorials, and professional educational content focused on education, culture, and entertainment.</p>
+				<br><p><img id="TecnicoAV_LogoCircle" src="img/TecnicoAV_LogoCircle.jpg" alt="DPCproducciones TecnicoAV logo"></p>
+				<p>TecnicoAV is the audiovisual technical division of DPCproducciones, focused on professional audiovisual systems, live events, sound engineering, lighting, broadcast workflows, stage technology, QLab programming, AV maintenance, and technical training resources.</p>
+			</div><!--/card-->
+		</div><!--/grid-->
 		
 		<!--<div class="info-block">
 			<h4>Future website structure</h4>
@@ -191,13 +125,28 @@ footer a{
 		</div>-->
 		
 		<br><hr width="60%"><br>
-		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger</a></p><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
 	</main>
 </div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
 
 <footer>
 	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
 	<a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a>
 </footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+</script>
 </body>
 </html>
