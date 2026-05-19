@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Audio Digital | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprende los fundamentos de los sistemas de audio digital, el muestreo, la profundidad de bits, los formatos digitales, las estaciones de trabajo de audio digital (DAW) y el procesamiento de audio en entornos audiovisuales profesionales.">
+<meta name="keywords" content="Audio digital, frecuencia de muestreo, profundidad de bits, DAW, audio PCM, formatos de audio, sonido digital, formación audiovisual">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/08_digitalaudio_es.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/08_digitalaudio_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Audio Digital | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Formación audiovisual profesional sobre sistemas y formatos de audio digital.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/08_digitalaudio_es.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Audio Digital | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende los fundamentos del audio digital utilizados en sistemas de sonido y producción profesionales.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="08_digitalaudio.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TécnicoAV | Sistemas de audio digital y producción</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Audio digital</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Audio digital</h2>
+		<p>El audio digital es la base de la producción de sonido moderna, los estudios de grabación, los sistemas de transmisión en directo, las instalaciones de radiodifusión y las consolas de audio en vivo.</p>
+		<p>Hoy en día, casi todos los sistemas de audio profesionales procesan el sonido digitalmente. Comprender el audio digital es fundamental para los técnicos audiovisuales modernos.</p>
+
+
+		<div class="info-block">
+			<h3>¿Qué es el audio digital?</h3>
+			<p>El audio digital es una representación del sonido convertida en datos numéricos.</p>
+			<p>En lugar de almacenar formas de onda analógicas continuas, los sistemas digitales capturan miles de mediciones cada segundo.</p>
+			<p>Estas mediciones son procesadas por ordenadores, interfaces de audio, mezcladores y procesadores digitales.</p>
+			<p>El audio digital permite una edición precisa, el procesamiento de efectos, el almacenamiento y la transmisión con un ruido mínimo.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Frecuencia de muestreo</h3>
+			<p>La frecuencia de muestreo define cuántas veces por segundo se mide una señal analógica. Se mide en hercios (Hz).</p>
+			<ul>
+				<li>44.1 kHz → Audio estándar de CD de música.</li>
+				<li>48 kHz → Producción de vídeo y radiodifusión.</li>
+				<li>96 kHz → Grabación profesional de alta resolución.</li>
+			</ul>
+			<p>Las frecuencias de muestreo más altas permiten capturar más detalles de audio, pero también requieren mayor capacidad de almacenamiento y procesamiento.</p>
+			<p>Los sistemas audiovisuales profesionales suelen funcionar a 48 kHz.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Profundidad de bits</h3>
+			<p>La profundidad de bits determina el rango dinámico y la precisión del audio digital.</p>
+			<ul>
+				<li>16-bit → Audio para el consumidor.</li>
+				<li>24-bit → Producción de audio profesional.</li>
+				<li>32-bit → Flujos de trabajo de grabación avanzados.</li>
+			</ul>
+			<p>Una mayor profundidad de bits proporciona un mejor margen dinámico y menores niveles de ruido. Esto es sumamente importante durante la grabación y la mezcla.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Conversión analógica a digital</h3>
+			<p>Los micrófonos y los instrumentos producen señales analógicas.</p>
+			<p>Las interfaces de audio y las mesas de mezclas digitales convierten estas señales en datos digitales mediante convertidores analógico-digitales (ADC).</p>
+			<p>Al reproducir audio, los convertidores digital-analógico (DAC) convierten la señal de nuevo a formato analógico para altavoces y auriculares.</p>
+			<p>La calidad de los convertidores influye notablemente en la claridad y la fidelidad del audio.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Estaciones de trabajo de audio digital (DAW)</h3>
+			<p>Un DAW es un software que se utiliza para grabar, editar, mezclar y producir audio.</p>
+			<p>Los DAW profesionales más comunes son:</p>
+			<ul>
+				<li>Pro Tools.</li>
+				<li>Logic Pro.</li>
+				<li>Cubase.</li>
+				<li>Ableton Live.</li>
+				<li>Reaper.</li>
+			</ul>
+			<p>Los DAW se utilizan en la producción musical, la creación de podcasts, la postproducción cinematográfica y los entornos de radiodifusión.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Formatos de audio</h3>
+			<p>El audio digital se puede almacenar utilizando diferentes formatos de archivo.</p>
+			<ul>
+				<li>WAV → Formato profesional sin comprimir.</li>
+				<li>AIFF → Apple formato de audio sin comprimir.</li>
+				<li>MP3 → Formato comprimido para el consumidor.</li>
+				<li>AAC → Transmisión en directo y dispositivos móviles.</li>
+				<li>FLAC → Formato comprimido sin pérdidas.</li>
+			</ul>
+			<p>Las producciones profesionales suelen trabajar con formatos sin comprimir durante la edición.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Latencia</h3>
+			<p>La latencia es el retraso entre la entrada y la salida de audio en los sistemas digitales.</p>
+			<p>Una latencia elevada puede generar problemas durante la monitorización en tiempo real y el rendimiento.</p>
+			<p>Los sistemas de audio profesionales utilizan hardware y controladores optimizados para reducir la latencia al máximo.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Errores comunes</h3>
+			<p>Muchos principiantes confunden un volumen de audio más alto con una mejor calidad de audio.</p>
+			<p>Una correcta gestión de la ganancia y unas grabaciones nítidas son más importantes que un volumen excesivo.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="07_acoustics_es.html">← Anterior</a>
+			<a href="09_equalization_es.html">Siguiente →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

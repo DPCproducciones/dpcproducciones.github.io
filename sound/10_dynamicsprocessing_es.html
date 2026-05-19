@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Procesamiento dinámico | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprenda sobre el procesamiento de dinámica, compresores, limitadores, puertas de ruido y control de señales de audio en sistemas audiovisuales profesionales.">
+<meta name="keywords" content="Procesamiento de dinámica, compresor, limitador, puerta de ruido, dinámica de audio, ingeniería de sonido, mezcla de audio, formación audiovisual">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing_es.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Procesamiento dinámico | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Formación audiovisual profesional sobre compresores, limitadores y control de la dinámica de audio.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/10_dynamicsprocessing_es.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Procesamiento dinámico | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende cómo funcionan los compresores, limitadores y puertas de ruido en los sistemas de sonido profesionales.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="10_dynamicsprocessing.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TécnicoAV | Procesamiento de dinámica y control de señales de audio</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto<a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Procesadores dinámica</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Procesadores dinámica</h2>
+		<p>El procesamiento dinámico se utiliza para controlar el rango de volumen de las señales de audio.</p>
+		<p>Es una de las herramientas más importantes en la ingeniería de sonido profesional, los sistemas de radiodifusión, la producción musical y los eventos en directo.</p>
+
+		<div class="info-block">
+			<h3>¿Qué son las dinámicas de audio?</h3>
+			<p>La dinámica de audio describe la diferencia entre las partes más silenciosas y las más ruidosas de una señal.</p>
+			<p>Un cantante que susurra y luego grita es un ejemplo de un amplio rango dinámico.</p>
+			<p>Los procesadores de dinámica ayudan a los ingenieros a controlar estas variaciones de nivel. Comprender el procesamiento de dinámica es una habilidad clave para los técnicos audiovisuales profesionales.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Compresores</h3>
+			<p>Un compresor reduce el volumen de las señales que superan un umbral seleccionado.</p>
+			<p>Esto crea un sonido más controlado y equilibrado.</p>
+			<p>Los compresores se utilizan comúnmente en:</p>
+			<ul>
+				<li>Voz.</li>
+				<li>Batería.</li>
+				<li>Bajos eléctricos.</li>
+				<li>Discursos transmitidos.</li>
+				<li>Podcast de audio.</li>
+			</ul>
+			<h4>Controles del compresor principal</h4>
+			<ul>
+				<li><b>Límite</b> → Nivel donde comienza la compresión.</li>
+				<li><b>Ratio</b> → Cantidad de reducción de ganancia.</li>
+				<li><b>Ataque</b> → Qué tan rápido comienza la compresión.</li>
+				<li><b>Relajación</b> → Con qué rapidez se detiene la compresión.</li>
+				<li><b>Ganancia de compensación</b> → Compensación del nivel de salida.</li>
+			</ul>
+		</div>
+
+		<div class="info-block">
+			<h3>Limitadores</h3>
+			<p>Un limitador es un tipo de compresor con una relación de compresión muy alta.</p>
+			<p>Impide que las señales de audio superen un nivel máximo.</p>
+			<p>Los limitadores son esenciales para:</p>
+			<ul>
+				<li>Protección de altavoces.</li>
+				<li>Evitar el recorte digital.</li>
+				<li>Control de transmisión de radiodifusión.</li>
+				<li>Seguridad en el sonido en directo.</li>
+			</ul>
+			<p>Los sistemas digitales modernos suelen incluir limitadores integrados para proteger los altavoces.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Puertas de ruido</h3>
+			<p>Una puerta de ruido silencia las señales por debajo de un umbral seleccionado.</p>
+			<p>Esto ayuda a eliminar el ruido de fondo no deseado y la fuga de sonido del micrófono.</p>
+			<p>Las puertas se utilizan comúnmente en:</p>
+			<ul>
+				<li>Micrófonos para batería.</li>
+				<li>Montajes de escenarios en vivo.</li>
+				<li>Estudios de radiodifusión.</li>
+				<li>Sistemas de voz.</li>
+			</ul>
+			<p>Una configuración incorrecta de la puerta de ruido puede cortar las colas de audio naturales y hacer que el sonido sea poco natural.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Expansores</h3>
+			<p>Los expansores funcionan de forma opuesta a los compresores.</p>
+			<p>Aumentan el rango dinámico al atenuar los sonidos suaves.</p>
+			<p>Los expansores se utilizan a menudo para reducir el ruido de fondo manteniendo un sonido natural.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Procesamiento de cadena lateral</h3>
+			<p>El procesamiento de cadena lateral permite que una señal controle la dinámica de otra.</p>
+			<p>Un ejemplo común es la radiodifusión, donde el volumen de la música disminuye automáticamente cuando habla un presentador.</p>
+			<p>En la producción musical, la compresión sidechain se utiliza con frecuencia en la música electrónica de baile.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Rango dinámico en audio digital</h3>
+			<p>Los sistemas de audio digital tienen un nivel máximo limitado denominado 0 dBFS.</p>
+			<p>Si las señales superan este nivel, se produce un recorte digital que causa una fuerte distorsión.</p>
+			<p>Los procesadores dinámicos ayudan a mantener niveles de señal seguros y controlados.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Procesamiento de dinámica en sonido en directo</h3>
+			<p>En los eventos en directo, los compresores mejoran la uniformidad vocal y el equilibrio instrumental.</p>
+			<p>Los limitadores protegen los sistemas de altavoces contra la sobrecarga.</p>
+			<p>Las compuertas ayudan a reducir el ruido en el escenario y a mejorar la claridad.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Errores comunes</h3>
+			<ul>
+				<li>Utilizar una compresión excesiva.</li>
+				<li>Destruyendo la dinámica natural.</li>
+				<li>Configuración de ataque y liberación incorrecta.</li>
+				<li>Mezclas excesivamente limitadas.</li>
+				<li>Utilizar las compuertas de forma demasiado agresiva.</li>
+			</ul>
+			<p>Un buen procesamiento de la dinámica debe sonar natural y transparente.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="09_equalization_es.html">← Anterior</a>
+			<a href="11_audioeffects_es.html">Siguiente →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

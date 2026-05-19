@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Consolas de mezclas y flujo de señal | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprende cómo funcionan las consolas de mezclas de audio profesionales, incluyendo el flujo de señal, la gestión de ganancia, la ecualización, los buses, los envíos auxiliares, los sistemas de monitorización y las técnicas de mezcla de sonido en directo.">
+<meta name="keywords" content="Consolas de mezclas, mezclador de audio, flujo de señal, ajuste de ganancia, ecualización, envíos auxiliares, buses, sonido en directo, mezcla de estudio, formación audiovisual">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/05_mixingconsoles_es.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/05_mixingconsoles_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Consolas de mezclas de audio y flujo de señal | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Formación audiovisual profesional sobre mezcladores de audio, flujo de señal y sistemas de sonido en directo.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/05_mixingconsoles_es.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Consolas de mezclas de audio y flujo de señal | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende sobre consolas de mezcla de audio profesionales y sistemas de enrutamiento de señales.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#AudioMixingConsole {
+ width:100%;
+ max-width:500px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="05_mixingconsoles.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TécnicoAV | Mesas de mezclas y flujo de señal de audio profesional</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Mesas de mezclas</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Mesas de mezclas</h2>
+		<p>La mesa de mezclas es el elemento central de la mayoría de los sistemas de audio profesionales.</p>
+		<p>Permite a los técnicos controlar micrófonos, instrumentos, sistemas de reproducción, efectos y altavoces.</p>
+		<p>Comprender el flujo de la señal es una de las habilidades más importantes en la tecnología audiovisual y la ingeniería de sonido.</p>
+
+		<div class="info-block">
+			<h3>Mesa de mezclas</h3>
+			<p>Una mesa de mezclas, también llamada mezclador de audio o mesa de sonido, es un dispositivo que se utiliza para combinar, procesar y distribuir señales de audio. Pueden ser analógicas o digitales.</p>
+			<p><img id="AudioMixingConsole" src="https://www.getdante.com/wp-content/uploads/2024/01/soundcraft-vi2000_1200px-700x298.png" alt="Mesa de mezclas de audio"></p>
+			<p>Las mesas de mezclas se utilizan en:</p>
+			<ul>
+				<li>Conciertos y festivales en vivo.</li>
+				<li>Estudios de grabación.</li>
+				<li>Estudios de televisión y teatros.</li>
+				<li>Instalaciones de radiodifusión.</li>
+				<li>Producciones en streaming.</li>
+				<li>Conferencias y eventos.</li>
+			</ul>
+		</div>
+
+		<div class="info-block">
+			<h3>Flujo de señal de audio</h3>
+			<p>El flujo de señal describe la ruta que sigue el audio a través del sistema.</p>
+			<p>Una cadena de señalización típica puede incluir:</p>
+			<ul>
+				<li>Micrófono o fuente de audio.</li>
+				<li>Pre-amplificador.</li>
+				<li>Ecualizador (EQ).</li>
+				<li>Procesamiento dinámico.</li>
+				<li>Fader de canal.</li>
+				<li>Buses de enrutamiento.</li>
+				<li>Amplificador o altavoz autoamplificado.</li>
+			</ul>
+			<p>Comprender la ruta de la señal ayuda a los técnicos a diagnosticar problemas rápidamente.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Canales de entrada</h3>
+			<p>Cada canal de una mesa de mezclas recibe una señal de audio.</p>
+			<p>Los controles típicos de un canal incluyen:</p>
+			<ul>
+				<li>Ganancia o recorte.</li>
+				<li>Controles de ecualización.</li>
+				<li>Envíos auxiliares.</li>
+				<li>Control panorámico.</li>
+				<li>Botón para silenciar (mute).</li>
+				<li>Botón de escucha "Solo/PFL".</li>
+				<li>Fader de canal.</li>
+			</ul>
+			<p>Las grandes producciones pueden utilizar docenas o incluso cientos de canales simultáneamente.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Etapa de ganancia</h3>
+			<p>La gestión de ganancia es el proceso de ajustar los niveles de señal correctos en todo el sistema de audio.</p>
+			<p>Una estructura de ganancia adecuada previene:</p>
+			<ul>
+				<li>Distorsión.</li>
+				<li>Recorte.</li>
+				<li>Ruido.</li>
+				<li>Niveles de señal débiles.</li>
+			</ul>
+			<p>La ganancia del preamplificador debe ajustarse cuidadosamente antes de usar el fader del canal.</p>
+			<p>Muchos problemas que cometen los principiantes en sonido en directo se deben a una configuración incorrecta de la ganancia.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Ecualización (EQ)</h3>
+			<p>Los controles de ecualización permiten a los técnicos modificar los rangos de frecuencia.</p>
+			<p>Los controles de ecualización comunes incluyen:</p>
+			<ul>
+				<li>Altas frecuencias.</li>
+				<li>Frecuencias medias.</li>
+				<li>Bajas frecuencias.</li>
+				<li>Ecuación paramétrica.</li>
+				<li>Filtros de paso alto.</li>
+			</ul>
+			<p>La ecualización se utiliza para mejorar la claridad, reducir la retroalimentación y equilibrar los instrumentos o las voces.</p>
+			<p>Un uso excesivo de ecualización puede dañar el sonido natural de una mezcla.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Envíos auxiliares y mezclas de monitorización</h3>
+			<p>Los envíos auxiliares, a menudo llamados envíos auxiliares, se utilizan para crear mezclas separadas.</p>
+			<p>Aplicaciones comunes:</p>
+			<ul>
+				<li>Sistemas de monitores de escenario.</li>
+				<li>Monitorización intra-auricular.</li>
+				<li>Procesadores de efectos.</li>
+				<li>Broadcast feeds.</li>
+			</ul>
+			<p>Los músicos en el escenario suelen requerir diferentes mezclas de monitores dependiendo de lo que necesiten escuchar.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Buses y subgrupos</h3>
+			<p>Los buses combinan múltiples señales en una única ruta de salida.</p>
+			<p>Los subgrupos ayudan a organizar canales como:</p>
+			<ul>
+				<li>Batería.</li>
+				<li>Coros vocales.</li>
+				<li>Sistemas de reproducción.</li>
+				<li>Secciones de la orquesta.</li>
+			</ul>
+			<p>Esto simplifica las producciones a gran escala y permite el procesamiento en grupo.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Mezcladores analógicos y digitales</h3>
+			<p>Las mesas de mezclas analógicas utilizan circuitos electrónicos físicos para el procesamiento de señales.</p>
+			<p>Las mesas de mezclas digitales convierten el audio en datos digitales y ofrecen funciones de procesamiento avanzadas.</p>
+			<p>Las consolas digitales suelen incluir:</p>
+			<ul>
+				<li>Efectos internos.</li>
+				<li>Memorias de escena.</li>
+				<li>Control remoto.</li>
+				<li>Audio en red.</li>
+				<li>Grabación multipista.</li>
+			</ul>
+			<p>La mayoría de las producciones en directo modernas utilizan ahora consolas digitales.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Errores comunes</h3>
+			<ul>
+				<li>Ganancia incorrecta.</li>
+				<li>Demasiada ecualización.</li>
+				<li>Ignorar el enrutamiento de la señal.</li>
+				<li>Malas mezclas de monitores.</li>
+				<li>Sobrecarga de salidas.</li>
+				<li>Mala organización del canal.</li>
+			</ul>
+			<p>Los ingenieros profesionales desarrollan flujos de trabajo organizados para evitar problemas técnicos durante la producción.</p>
+			<p>Un técnico de audio cualificado debe comprender el enrutamiento, la resolución de problemas, la comunicación y la toma de decisiones rápidas bajo presión.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="04_audioconnectors_es.html">← Anterior</a>
+			<a href="06_loudspeakers_es.html">Siguiente →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

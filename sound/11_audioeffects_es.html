@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Efectos de audio | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprende los fundamentos de los efectos de audio en sistemas de sonido profesionales, incluyendo reverberación, retardo, coro, flanger, phaser, distorsión y efectos de modulación.">
+<meta name="keywords" content="Efectos de audio, reverberación, retardo, coro, flanger, phaser, distorsión, efectos de modulación, ingeniería de sonido, formación audiovisual">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/11_audioeffects.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/11_audioeffects.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/11_audioeffects_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/11_audioeffects.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Efectos de audio | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Formación audiovisual profesional sobre reverberación, retardo, modulación y efectos de audio creativos.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/11_audioeffects.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Efectos de audio | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende cómo se utilizan los efectos de audio profesionales en la producción musical, el sonido en directo y los sistemas de radiodifusión.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.effects-table{
+	width:100%;
+	max-width:900px;
+	margin:auto;
+	border-collapse:collapse;
+	background:white;
+	box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+.effects-table th,
+.effects-table td{
+	border:1px solid #ddd;
+	padding:12px;
+	text-align:left;
+}
+.effects-table th{
+	background:#2196F3;
+	color:white;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="11_audioeffects.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TécnicoAV | Formación audiovisual profesional - Efectos de audio</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Efectos de audio</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Audio Effects</h2>
+		<p>Los efectos de audio son procesadores que se utilizan para modificar, mejorar o transformar de forma creativa las señales de sonido.</p>
+		<p>En la producción de audio profesional, los efectos son esenciales para la mezcla de música, los conciertos en directo, el sonido cinematográfico, las producciones teatrales, los sistemas de radiodifusión y los entornos de streaming.</p>
+
+		<div class="info-block">
+			<h3>¿Qué son los efectos de audio?</h3>
+			<p>Un efecto de audio modifica algún aspecto de una señal de audio después de haber sido grabada o amplificada.</p>
+			<p>Los efectos pueden alterar:</p>
+			<ul>
+				<li>Espacio y ambiente.</li>
+				<li>Tiempo y repetición.</li>
+				<li>Velocidad y modulación.</li>
+				<li>Dinámica y tono.</li>
+				<li>Carácter y textura creativos.</li>
+			</ul>
+			<p>Algunos efectos están diseñados para sonar naturales, mientras que otros crean intencionadamente transformaciones dramáticas o artísticas.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Reverberación</h3>
+			<p>La reverberación simula los reflejos del sonido dentro de un espacio físico, como una habitación, una sala o un estadio.</p>
+			<p>Sin reverberación, el audio puede sonar seco y poco natural.</p>
+			<p>Los tipos de reverberación más comunes son:</p>
+			<ul>
+				<li>Room reverb (Reverberación de habitación): Simula el sonido natural dentro de un cuarto de tamaño mediano o pequeño. Aporta profundidad y dimensión de forma muy realista sin que el sonido se sienta excesivamente alejado.</li>
+				<li>Hall reverb (Reverberación de sala): Emula grandes auditorios o salas de conciertos. Produce un sonido espacioso, envolvente y cálido, ideal para hacer que los instrumentos o voces suenen más grandiosos.</li>
+				<li>Plate reverb (Reverberación de placa): Recrea el sonido de las antiguas máquinas analógicas, en las que el sonido vibraba a través de una placa de metal suspendida. Ofrece un sonido brillante y denso, muy utilizado para voces y cajas de batería.</li>
+				<li>Spring reverb (Reverberación de muelles): Emula el sonido clásico y metálico generado al pasar el sonido por resortes de metal. Es el efecto característico de los amplificadores de guitarra eléctrica vintage y muy usado en la música dub o reggae.</li>
+				<li>Cathedral reverb (Reverberación de catedral): Es una versión extrema de la reverb Hall, que emula la inmensa acústica de una iglesia o catedral. Cuenta con un tiempo de decaimiento largo, creando una atmósfera gigantesca y etérea.</li>
+			</ul>
+			<p>La reverberación se utiliza mucho en voces, instrumentos y diseño de sonido cinematográfico.</p>
+			<p>Un exceso de reverberación puede reducir la claridad y la inteligibilidad.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Retardo y eco</h3>
+			<p>La función de retardo repite una señal de audio después de un tiempo determinado.</p>
+			<p>Los retardos simples crean ecos, mientras que los retardos avanzados pueden generar patrones rítmicos y efectos espaciales.</p>
+			<p>Los parámetros comunes son:</p>
+			<ul>
+				<li>Tiempo de retardo (Delay time): Define el tiempo exacto que transcurre entre el sonido original y la primera repetición (eco). Suele medirse en milisegundos (ms) y determina si el efecto suena como un eco largo o una repetición rápida y compacta.</li>
+				<li>Retroalimentación (Feedback): Controla la cantidad de repeticiones o la duración del efecto. Al subirlo, el sonido se repite más veces; si lo pones al mínimo, el sonido se repetirá una sola vez.</li>
+				<li>Mezcla (Wet/Dry mix): Determina el equilibrio de volumen entre la señal original sin procesar ("Dry" o "Seca") y la señal con el efecto aplicado ("Wet" o "Húmeda").</li>
+				<li>Sincronía con el tempo (Synchronization to tempo / Sync): Permite sincronizar las repeticiones del eco directamente con la velocidad de la canción (eléctrica o por pulsos por minuto). Las repeticiones caerán a tiempo con el ritmo (ej. en negras o corcheas) en lugar de depender de milisegundos.</li>
+			</ul>
+			<p>El retardo se utiliza habitualmente en la producción musical, en efectos de guitarra y en el procesamiento de voz para radiodifusión.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Efectos de modulación</h3>
+			<p>Los efectos de modulación modifican continuamente aspectos de la señal de audio para crear movimiento y textura.</p>
+			<table class="effects-table">
+				<tr><th>Efecto</th><th>Descripción</th></tr>
+				<tr><td>Chorus</td><td>Creates the illusion of multiple similar sounds playing together.</td></tr>
+				<tr><td>Flanger</td><td>Produce un efecto de filtro de peine de barrido mediante retardos cortos.</td></tr>
+				<tr><td>Phaser</td><td>Modifica las relaciones de fase para crear cambios tonales dinámicos.</td></tr>
+				<tr><td>Tremolo</td><td>Modula el volumen a lo largo del tiempo.</td></tr>
+				<tr><td>Vibrato</td><td>Modula el tono a lo largo del tiempo.</td></tr>
+			</table>
+			<br><p>Estos efectos son comunes en guitarras eléctricas, sintetizadores y diseño de sonido creativo.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Distorsión y saturación</h3>
+			<p>La distorsión altera la forma de onda recortando o sobrecargando la señal.</p>
+			<p>Puede aportar calidez, agresividad o una coloración armónica.</p>
+			<p>La saturación controlada se utiliza ampliamente en la mezcla y masterización de estilo analógico. Los estilos de distorsión más comunes son:</p>
+			<h4>Tube saturation<br>(Saturación de válvulas / tubos)</h4>
+			<p>Se produce cuando se empuja un amplificador de válvulas de vacío más allá de sus límites. El circuito redondea los picos de la onda y genera armónicos pares (que son muy agradables para el oído humano), añadiendo una textura rica, espesa y cálida a las voces o instrumentos.</p>
+			<h4>Tape saturation<br>(Saturación de cinta)</h4>
+			<p>Es el efecto orgánico que ocurre al grabar audio a niveles muy altos en máquinas de cinta magnética analógica. La cinta comprime los picos de la señal y recorta suavemente las frecuencias agudas, creando un sonido más uniforme, cohesivo y con pegada que "pega" los elementos de una mezcla.</p>
+			<h4>Overdrive</h4>
+			<p>Es la saturación clásica de los amplificadores de guitarra llevados a volúmenes altos. Funciona comprimiendo suavemente el sonido antes de recortarlo. Responde a la dinámica de tu interpretación: suena limpio cuando tocas suave y se vuelve crujiente y saturado cuando golpeas las cuerdas con fuerza.</p>
+			<h4>Distorsión Fuzz</h4>
+			<p>Es el tipo de distorsión más agresivo y extremo. Utiliza transistores que amplifican la señal hasta un punto donde literalmente "rompen" la onda original, aplanándola tanto que la convierte casi en una onda cuadrada. Produce un sonido zumbante, denso, con muchísimo sustain y muy rico en armónicos.</p>
+			<h4>Digital clipping<br>(Recorte digital)</h4>
+			<p>A diferencia de la saturación analógica que es redondeada y suave, el recorte digital es un tope físico y brusco. Ocurre cuando el audio sobrepasa el límite máximo (0 dBFS) que un sistema digital puede procesar, cortando la onda de forma recta y plana. Suena a un chasquido o estática áspera, metálica y desagradable.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Enrutamiento de efectos</h3>
+			<p>En las mesas de mezclas profesionales y en los DAW (estaciones de trabajo de audio digital), los efectos suelen conectarse mediante envíos y retornos auxiliares.</p>
+			<p>Esto permite que varios canales de audio compartan el mismo procesador de efectos.</p>
+			<p>Los métodos de enrutamiento comunes son:</p>
+			<ul>
+				<li>Insertar efectos.</li>
+				<li>Efectos de envío/retorno.</li>
+				<li>Procesamiento en paralelo.</li>
+				<li>Buses de efectos.</li>
+			</ul>
+			<p>Un enrutamiento adecuado mejora la eficiencia y mantiene mezclas más limpias.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Error común</h3>
+			<p>El uso excesivo de reverberación y retardo reduce la claridad y satura la mezcla.</p>
+			<p>El reto no consiste en añadir más efectos, sino en elegir el efecto adecuado con moderación y propósito.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="10_dynamicsprocessing_es.html">← Anterior</a>
+			<a href="12_wirelesssystems_es.html">Siguiente →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

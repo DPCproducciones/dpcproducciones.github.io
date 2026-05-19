@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Audio | DPCproducciones TecnicoAV</title>
+
+<meta name="description" content="Learn the fundamentals of digital audio systems, sampling, bit depth, digital formats, DAWs and audio processing in professional audiovisual environments.">
+<meta name="keywords" content="Digital audio, sampling rate, bit depth, DAW, PCM audio, audio formats, digital sound, audiovisual training">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/08_digitalaudio_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Digital Audio | DPCproducciones TecnicoAV">
+<meta property="og:description" content="Professional audiovisual training about digital audio systems and formats.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/08_digitalaudio.html">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Audio | DPCproducciones TecnicoAV">
+<meta name="twitter:description" content="Learn digital audio fundamentals used in professional sound systems and production.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Technical Menu</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SOUND</button>
+		<div class="panel">
+			<a href="00_sound.html">Sound Index</a>
+			<a href="01_physicsofsound.html">Physics of Sound</a>
+			<a href="02_humanear.html">Human Ear</a>
+			<a href="03_microphones.html">Microphones</a>
+			<a href="04_audioconnectors.html">Connectors</a>
+			<a href="05_mixingconsoles.html">Mixing Consoles</a>
+			<a href="06_loudspeakers.html">Loudspeakers</a>
+			<a href="07_acoustics.html">Acoustics</a>
+			<a href="08_digitalaudio.html">Digital Audio</a>
+			<a href="09_equalization.html">Equalization</a>
+			<a href="10_dynamicsprocessing.html">Dynamic Processing</a>
+			<a href="11_audioeffects.html">Audio Effects</a>
+			<a href="12_wirelesssystems.html">Wireless Systems</a>
+			<a href="13_livesound.html">Live sound</a>
+			<a href="14_broadcastaudio.html">Sound for Video</a>
+			<a href="15_audionetworking.html">Audio Networking</a>
+		</div>
+		<button class="accordion">🎥 VIDEO</button>
+		<div class="panel">
+			<a href="../video/video.html">Video Index</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="#" style="color:#777;">🇬🇧 EN</a>
+		<br>
+		<a href="08_digitalaudio_es.html">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TecnicoAV | Digital Audio Systems and Production</h1>
+		<a href="../index.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index.html">Home</a>
+			<a href="../tecnicoav.html" style="color:#777;">TecnicoAV</a>
+			<a href="../apps.html">Apps</a>
+			<a href="../privacy.html">Privacy</a>
+			<a href="../contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index.html">Home</a> >
+			<a href="../tecnicoav.html">TecnicoAV</a> >
+			<a href="00_sound.html">Sound</a> >
+			<span>Digital Audio</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound.html">Sound</a>
+			<a href="../video/video.html">Video</a>
+		</div>
+
+		<h2>Digital Audio</h2>
+		<p>Digital audio is the foundation of modern sound production, recording studios, streaming systems, broadcast facilities and live audio consoles.</p>
+		<p>Today, nearly all professional audio systems process sound digitally. Understanding digital audio is essential for modern audiovisual technicians.</p>
+
+
+		<div class="info-block">
+			<h3>What is Digital Audio?</h3>
+			<p>Digital audio is a representation of sound converted into numerical data.</p>
+			<p>Instead of storing continuous analog waveforms, digital systems capture thousands of measurements every second.</p>
+			<p>These measurements are processed by computers, audio interfaces, mixers and digital processors.</p>
+			<p>Digital audio allows precise editing, effects processing, storage and transmission with minimal noise.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Sampling Rate</h3>
+			<p>The sampling rate defines how many times per second an analog signal is measured. It is measured in Hertz (Hz).</p>
+			<ul>
+				<li>44.1 kHz → Standard music CD audio.</li>
+				<li>48 kHz → Video and broadcast production.</li>
+				<li>96 kHz → High-resolution professional recording.</li>
+			</ul>
+			<p>Higher sampling rates can capture more audio detail, but also require more storage and processing power.</p>
+			<p>Professional audiovisual systems commonly operate at 48 kHz.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Bit Depth</h3>
+			<p>Bit depth determines the dynamic range and precision of digital audio.</p>
+			<ul>
+				<li>16-bit → Consumer audio.</li>
+				<li>24-bit → Professional audio production.</li>
+				<li>32-bit → Advanced recording workflows.</li>
+			</ul>
+			<p>Higher bit depth provides better headroom and lower noise levels. This is extremely important during recording and mixing.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Analog to Digital Conversion</h3>
+			<p>Microphones and instruments produce analog signals.</p>
+			<p>Audio interfaces and digital mixers convert these signals into digital data using Analog-to-Digital Converters (ADC).</p>
+			<p>When audio is played back, Digital-to-Analog Converters (DAC) convert the signal back into analog form for loudspeakers and headphones.</p>
+			<p>The quality of converters strongly affects audio clarity and fidelity.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Digital Audio Workstations (DAWs)</h3>
+			<p>A DAW is software used for recording, editing, mixing and producing audio.</p>
+			<p>Common professional DAWs are:</p>
+			<ul>
+				<li>Pro Tools.</li>
+				<li>Logic Pro.</li>
+				<li>Cubase.</li>
+				<li>Ableton Live.</li>
+				<li>Reaper.</li>
+			</ul>
+			<p>DAWs are used in music production, podcasting, film post-production and broadcast environments.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Audio Formats</h3>
+			<p>Digital audio can be stored using different file formats.</p>
+			<ul>
+				<li>WAV → Uncompressed professional format.</li>
+				<li>AIFF → Apple uncompressed audio format.</li>
+				<li>MP3 → Compressed consumer format.</li>
+				<li>AAC → Streaming and mobile devices.</li>
+				<li>FLAC → Lossless compressed format.</li>
+			</ul>
+			<p>Professional productions usually work with uncompressed formats during editing.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Latency</h3>
+			<p>Latency is the delay between audio input and output in digital systems.</p>
+			<p>High latency can create problems during live monitoring and performance.</p>
+			<p>Professional audio systems use optimized hardware and drivers to reduce latency as much as possible.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Common mistakes</h3>
+			<p>Many beginners confuse louder audio with better audio quality.</p>
+			<p>Proper gain staging and clean recordings are more important than excessive volume.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="07_acoustics.html">← Prev Topic</a>
+			<a href="09_equalization.html">Next Topic →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

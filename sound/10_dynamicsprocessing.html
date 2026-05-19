@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dynamics Processing | DPCproducciones TecnicoAV</title>
+
+<meta name="description" content="Learn about dynamics processing, compressors, limiters, gates and audio signal control in professional audiovisual systems.">
+<meta name="keywords" content="Dynamics processing, compressor, limiter, gate, audio dynamics, sound engineering, mixing audio, audiovisual training">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dynamics Processing | DPCproducciones TecnicoAV">
+<meta property="og:description" content="Professional audiovisual training about compressors, limiters and audio dynamics control.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/10_dynamicsprocessing.html">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dynamics Processing | DPCproducciones TecnicoAV">
+<meta name="twitter:description" content="Learn how compressors, limiters and gates work in professional sound systems.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Technical Menu</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SOUND</button>
+		<div class="panel">
+			<a href="00_sound.html">Sound Index</a>
+			<a href="01_physicsofsound.html">Physics of Sound</a>
+			<a href="02_humanear.html">Human Ear</a>
+			<a href="03_microphones.html">Microphones</a>
+			<a href="04_audioconnectors.html">Connectors</a>
+			<a href="05_mixingconsoles.html">Mixing Consoles</a>
+			<a href="06_loudspeakers.html">Loudspeakers</a>
+			<a href="07_acoustics.html">Acoustics</a>
+			<a href="08_digitalaudio.html">Digital Audio</a>
+			<a href="09_equalization.html">Equalization</a>
+			<a href="10_dynamicsprocessing.html">Dynamic Processing</a>
+			<a href="11_audioeffects.html">Audio Effects</a>
+			<a href="12_wirelesssystems.html">Wireless Systems</a>
+			<a href="13_livesound.html">Live sound</a>
+			<a href="14_broadcastaudio.html">Sound for Video</a>
+			<a href="15_audionetworking.html">Audio Networking</a>
+		</div>
+		<button class="accordion">🎥 VIDEO</button>
+		<div class="panel">
+			<a href="../video/video.html">Video Index</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="#" style="color:#777;">🇬🇧 EN</a>
+		<br>
+		<a href="10_dynamicsprocessing_es.html">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TecnicoAV | Dynamics Processing and Audio Signal Control</h1>
+		<a href="../index.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index.html">Home</a>
+			<a href="../tecnicoav.html" style="color:#777;">TecnicoAV</a>
+			<a href="../apps.html">Apps</a>
+			<a href="../privacy.html">Privacy</a>
+			<a href="../contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index.html">Home</a> >
+			<a href="../tecnicoav.html">TecnicoAV</a> >
+			<a href="00_sound.html">Sound</a> >
+			<span>Dynamics Processing</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound.html">Sound</a>
+			<a href="../video/video.html">Video</a>
+		</div>
+
+		<h2>Dynamics Processing</h2>
+		<p>Dynamics processing is used to control the volume range of audio signals.</p>
+		<p>It is one of the most important tools in professional sound engineering, broadcast systems, music production and live events.</p>
+
+		<div class="info-block">
+			<h3>What are Audio Dynamics?</h3>
+			<p>Audio dynamics describe the difference between the quietest and loudest parts of a signal.</p>
+			<p>A singer whispering and then shouting is an example of a large dynamic range.</p>
+			<p>Dynamics processors help engineers control these level variations. Understanding dynamics processing is a key skill for professional audiovisual technicians.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Compressors</h3>
+			<p>A compressor reduces the volume of signals that exceed a selected threshold.</p>
+			<p>This creates a more controlled and balanced sound.</p>
+			<p>Compressors are commonly used on:</p>
+			<ul>
+				<li>Vocals.</li>
+				<li>Drums.</li>
+				<li>Bass guitars.</li>
+				<li>Broadcast speech.</li>
+				<li>Podcast audio.</li>
+			</ul>
+			<h4>Main Compressor Controls</h4>
+			<ul>
+				<li><b>Threshold</b> → Level where compression begins.</li>
+				<li><b>Ratio</b> → Amount of gain reduction.</li>
+				<li><b>Attack</b> → How quickly compression starts.</li>
+				<li><b>Release</b> → How quickly compression stops.</li>
+				<li><b>Make-up Gain</b> → Output level compensation.</li>
+			</ul>
+		</div>
+
+		<div class="info-block">
+			<h3>Limiters</h3>
+			<p>A limiter is a type of compressor with a very high ratio.</p>
+			<p>It prevents audio signals from exceeding a maximum level.</p>
+			<p>Limiters are essential for:</p>
+			<ul>
+				<li>Protecting loudspeakers.</li>
+				<li>Preventing digital clipping.</li>
+				<li>Broadcast transmission control.</li>
+				<li>Live sound safety.</li>
+			</ul>
+			<p>Modern digital systems often include built-in limiters for speaker protection.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Noise Gates</h3>
+			<p>A noise gate mutes signals below a selected threshold.</p>
+			<p>This helps eliminate unwanted background noise and microphone bleed.</p>
+			<p>Gates are commonly used on:</p>
+			<ul>
+				<li>Drum microphones.</li>
+				<li>Live stage setups.</li>
+				<li>Broadcast studios.</li>
+				<li>Speech systems.</li>
+			</ul>
+			<p>Improper gate settings can cut off natural audio tails and sound unnatural.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Expanders</h3>
+			<p>Expanders work in the opposite way to compressors.</p>
+			<p>They increase dynamic range by making quiet sounds quieter.</p>
+			<p>Expanders are often used to reduce background noise while maintaining natural sound.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Sidechain Processing</h3>
+			<p>Sidechain processing allows one signal to control the dynamics of another.</p>
+			<p>A common example is radio broadcasting, where music volume automatically decreases when a presenter speaks.</p>
+			<p>In music production, sidechain compression is frequently used in electronic dance music.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Dynamic Range in Digital Audio</h3>
+			<p>Digital audio systems have a limited maximum level called 0 dBFS.</p>
+			<p>If signals exceed this level, digital clipping occurs and causes harsh distortion.</p>
+			<p>Dynamics processors help maintain safe and controlled signal levels.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Dynamics Processing in Live Sound</h3>
+			<p>In live events, compressors improve vocal consistency and instrument balance.</p>
+			<p>Limiters protect loudspeaker systems from overload.</p>
+			<p>Gates help reduce stage noise and improve clarity.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Common Mistakes</h3>
+			<ul>
+				<li>Using excessive compression.</li>
+				<li>Destroying natural dynamics.</li>
+				<li>Incorrect attack and release settings.</li>
+				<li>Over-limiting mixes.</li>
+				<li>Using gates too aggressively.</li>
+			</ul>
+			<p>Good dynamics processing should sound natural and transparent.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="09_equalization.html">← Prev Topic</a>
+			<a href="11_audioeffects.html">Next Topic →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

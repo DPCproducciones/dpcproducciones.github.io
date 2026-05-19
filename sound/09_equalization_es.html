@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ecualización | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprende los fundamentos de la ecualización de audio, el balance de frecuencias, los filtros de ecualización y la configuración profesional del sonido en sistemas audiovisuales.">
+<meta name="keywords" content="Ecualización, EQ, frecuencias de audio, mezcla de sonido, ecualizador, ecualizador paramétrico, ingeniería de audio, formación audiovisual">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/09_equalization_es.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/09_equalization.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/09_equalization_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/09_equalization.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ecualización | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Formación audiovisual profesional sobre ecualizadores, frecuencias de audio y modelado de sonido.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/09_equalization_es.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ecualización | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende cómo funciona la ecualización de audio en los sistemas de sonido profesionales y en la producción musical.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="09_equalization.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TécnicoAV | Ecualización de audio y control de frecuencia</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Ecualización</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Ecualización y<br>control de frecuencia</h2>
+		<p>La ecualización, comúnmente llamada EQ, es una de las herramientas más importantes en la ingeniería de audio profesional.</p>
+		<p>Permite a los técnicos e ingenieros de sonido controlar las frecuencias, mejorar la claridad y ajustar el equilibrio tonal de las señales de audio.</p>
+		<p>Comprender la inteligencia emocional es una de las habilidades fundamentales de los técnicos audiovisuales profesionales.</p>
+
+
+		<div class="info-block">
+			<h3>¿Qué es la ecualización?</h3>
+			<p>La ecualización es el proceso de aumentar o reducir rangos de frecuencia específicos en una señal de audio.</p>
+			<p>La ecualización se utiliza para corregir problemas, mejorar la inteligibilidad y crear el carácter sonoro deseado.</p>
+			<p>Por ejemplo:</p>
+			<ul>
+				<li>Reducir las bajas frecuencias puede eliminar el ruido de fondo.</li>
+				<li>Aumentar las frecuencias medias puede mejorar la claridad vocal.</li>
+				<li>Reducir las frecuencias altas estridentes puede suavizar los sonidos agresivos.</li>
+			</ul>
+		</div>
+
+		<div class="info-block">
+			<h3>El espectro de frecuencias de audio</h3>
+			<p>El rango de audición humana es aproximadamente de 20 Hz a 20 kHz.</p>
+			<p>Este rango se divide en varias áreas de frecuencia:</p>
+			<ul>
+				<li><b>Subgraves (20 Hz – 60 Hz)</b> → Energía profunda en las frecuencias bajas.</li>
+				<li><b>Graves (60 Hz – 250 Hz)</b> → Calidez y potencia.</li>
+				<li><b>Rango medio bajo (250 Hz – 500 Hz)</b> → Cuerpo y plenitud.</li>
+				<li><b>Rango medio (500 Hz – 2 kHz)</b> → Definición de instrumentos y voces.</li>
+				<li><b>Rango medio-alto (2 kHz – 6 kHz)</b> → Presencia y ataque.</li>
+				<li><b>Agudos (6 kHz – 20 kHz)</b> → Luminosidad y aire.</li>
+			</ul>
+			<p>Comprender estos rangos es fundamental para la mezcla y la resolución de problemas en los sistemas de audio.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Tipos de ecualizadores</h3>
+			<p>Existen varios diseños de ecualizador comunes que se utilizan en sistemas de sonido profesionales.</p>
+			<h4>Ecualizador gráfico</h4>
+			<p>Un ecualizador gráfico utiliza bandas de frecuencia fijas controladas por deslizadores.</p>
+			<p>Se utiliza habitualmente en sistemas de sonido en directo y en configuraciones de monitores.</p>
+			<h4>Ecualizador paramétrico</h4>
+			<p>Un ecualizador paramétrico proporciona un control más preciso.</p>
+			<p>Permite ajustar:</p>
+			<ul>
+				<li>Frecuencia.</li>
+				<li>Ganancia.</li>
+				<li>Ancho de banda (Q).</li>
+			</ul>
+			<p>La mayoría de las consolas de mezcla digitales modernas utilizan ecualizadores paramétricos.</p>
+			<h4>Shelving EQ</h4>
+			<p>Los filtros Shelving (de estantería) afectan a todas las frecuencias por encima o por debajo de un punto seleccionado.</p>
+			<p>Se utilizan habitualmente para dar forma al tono.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Filtros de paso alto y paso bajo</h3>
+			<p>Los filtros son herramientas esenciales en la ingeniería de sonido.</p>
+			<ul>
+				<li><b>Filtro de paso alto (HPF)</b> → Elimina las frecuencias bajas no deseadas.</li>
+				<li><b>Filtro de paso bajo (LPF)</b> → Elimina las frecuencias altas no deseadas.</li>
+			</ul>
+			<p>Los filtros de paso alto se utilizan ampliamente en los micrófonos para eliminar el ruido de manipulación, las vibraciones del escenario y el ruido del viento.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Ecualización en sonido en directo</h3>
+			<p>En conciertos y eventos en vivo, la ecualización ayuda a mejorar la inteligibilidad del habla y a prevenir la retroalimentación.</p>
+			<p>Los ingenieros de sonido suelen reducir las frecuencias problemáticas que provocan resonancia acústica en los recintos.</p>
+			<p>Los sistemas de monitorización también requieren una ecualización cuidadosa para evitar bucles de retroalimentación entre los micrófonos y los altavoces.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Ecualización en estudios de grabación</h3>
+			<p>En la producción de estudio, la ecualización se utiliza de forma creativa para dar forma a los instrumentos y las voces.</p>
+			<p>Los ingenieros pueden realzar ciertas frecuencias para ayudar a que los sonidos destaquen en una mezcla.</p>
+			<p>Las técnicas de ecualización sustractiva también son comunes, ya que eliminan las frecuencias innecesarias en lugar de potenciar otras.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Errores comunes en la ecualización</h3>
+			<ul>
+				<li>Utilizar un aumento excesivo del ecualizador.</li>
+				<li>Ignorar la acústica de la sala.</li>
+				<li>Aplicar ecualización sin la monitorización adecuada.</li>
+				<li>Potenciando múltiples frecuencias superpuestas.</li>
+				<li>Intentando corregir la mala colocación del micrófono con ecualización.</li>
+			</ul>
+			<p>Un buen sonido comienza con una correcta captura de la fuente antes de aplicar la ecualización.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="08_digitalaudio_es.html">← Anterior</a>
+			<a href="10_dynamicsprocessing_es.html">Siguiente →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

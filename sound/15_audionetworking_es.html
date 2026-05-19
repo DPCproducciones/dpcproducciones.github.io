@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Redes de audio y Dante | DPCproducciones TécnicoAV</title>
+
+<meta name="description" content="Aprenda sobre sistemas de redes de audio profesionales, incluyendo Dante, audio digital sobre IP, conmutadores gestionados, sincronización de reloj, latencia y enrutamiento de señales en sistemas audiovisuales modernos.">
+<meta name="keywords" content="Redes de audio, audio Dante, audio sobre IP, redes AV, sistemas de audio digital, certificación Dante, enrutamiento de audio, conmutadores gestionados, redes de sonido en directo">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/15_audionetworking_es.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/15_audionetworking.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/15_audionetworking_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/15_audionetworking.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Redes de audio y Dante | DPCproducciones TécnicoAV">
+<meta property="og:description" content="Sistemas de redes de audio profesionales, transporte de audio Dante e infraestructuras audiovisuales modernas.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/15_audionetworking_es.html">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Redes de audio y Dante | DPCproducciones TécnicoAV">
+<meta name="twitter:description" content="Aprende Dante, redes de audio digital e infraestructuras audiovisuales profesionales.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#DanteBox {
+ width:100%;
+ max-width:400px;
+}
+</style>
+</head>
+
+<body>
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Menú Técnico</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SONIDO</button>
+		<div class="panel">
+			<a href="00_sound_es.html">Índice de Sonido</a>
+			<a href="01_physicsofsound_es.html">Física del sonido</a>
+			<a href="02_humanear_es.html">Oído humano</a>
+			<a href="03_microphones_es.html">Micrófonos</a>
+			<a href="04_audioconnectors_es.html">Conectores</a>
+			<a href="05_mixingconsoles_es.html">Mesas de mezclas</a>
+			<a href="06_loudspeakers_es.html">Altavoces</a>
+			<a href="07_acoustics_es.html">Acústica</a>
+			<a href="08_digitalaudio_es.html">Audio digital</a>
+			<a href="09_equalization_es.html">Ecualización</a>
+			<a href="10_dynamicsprocessing_es.html">Dinámica</a>
+			<a href="11_audioeffects_es.html">Efectos de audio</a>
+			<a href="12_wirelesssystems_es.html">Inalámbricos</a>
+			<a href="13_livesound_es.html">Sonido directo</a>
+			<a href="14_broadcastaudio_es.html">Sonido para vídeo</a>
+			<a href="15_audionetworking_es.html">Redes de audio</a>
+		</div>
+		<button class="accordion">🎥 VÍDEO</button>
+		<div class="panel">
+			<a href="../video/video_es.html">Índice de Vídeo</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting_es.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="15_audionetworking.html">🇬🇧 EN</a>
+		<br>
+		<a href="#" style="color:#777;">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TecnicoAV | Redes de audio y Dante</h1>
+		<a href="../index_es.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index_es.html">Inicio</a>
+			<a href="../tecnicoav_es.html" style="color:#777;">TécnicoAV</a>
+			<a href="../apps_es.html">Apps</a>
+			<a href="../privacy_es.html">Privacidad</a>
+			<a href="../contact_es.html">Contacto</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index_es.html">Inicio</a> >
+			<a href="../tecnicoav_es.html">TécnicoAV</a> >
+			<a href="00_sound_es.html">Sonido</a> >
+			<span>Redes de audio</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound_es.html">Sonido</a>
+			<a href="../video/video_es.html">Vídeo</a>
+		</div>
+
+		<h2>Redes de audio y Dante</h2>
+		<p>Los sistemas de audio profesionales modernos dependen cada vez más de las tecnologías de redes digitales en lugar del cableado analógico multiconductor tradicional.</p>
+		<p>La conexión en red de audio permite que cientos de canales de audio viajen a través de cables Ethernet estándar con una latencia extremadamente baja y una alta fiabilidad.</p>
+		<p>En la actualidad, tecnologías como Dante, AVB y AES67 se utilizan ampliamente en sonido en directo, radiodifusión, teatros, sistemas de conferencias, estudios de grabación y grandes infraestructuras audiovisuales.</p>
+
+		<div class="info-block">
+			<h3>Del audio analógico al audio en red</h3>
+			<p>Los sistemas de audio tradicionales requerían grandes cables analógicos multifilares entre las cajas de escenario, las consolas de mezcla, los procesadores y los amplificadores.</p>
+			<p>Las grandes producciones en directo a menudo implicaban cientos de cables de audio de cobre que recorrían largas distancias.</p>
+			<p>Las redes de audio digital lo cambiaron todo por completo.</p>
+			<p>En lugar de transportar señales analógicas individuales, los sistemas modernos convierten el audio en paquetes digitales que viajan a través de redes informáticas.</p>
+			<p>Esto reduce drásticamente la complejidad del cableado al tiempo que aumenta la flexibilidad de enrutamiento.</p>
+			<p>Un solo cable Ethernet puede transportar docenas o incluso cientos de canales de audio simultáneos.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>¿Qué es Dante?</h3>
+			<p>Dante es una de las tecnologías de audio sobre IP más importantes que se utilizan actualmente en los sistemas audiovisuales profesionales.</p>
+			<p>Fue desarrollado por Audinate y se ha convertido en un estándar de la industria para el audio digital en red.</p>
+			<p><img id="DanteLogo" src="https://www.getdante.com/wp-content/uploads/2023/10/logo-1.svg" alt="Dante logo"></p>
+			<p>Dante permite que dispositivos de audio como mesas de mezclas, procesadores DSP, sistemas inalámbricos, amplificadores y cajas de escenario se comuniquen a través de redes IP estándar.</p>
+			<p>Una de las mayores ventajas de Dante es la interoperabilidad entre fabricantes.</p>
+			<p>Los dispositivos de diferentes marcas pueden funcionar conjuntamente dentro de la misma infraestructura de red.</p>
+			<p>Esta flexibilidad es una de las razones por las que Dante se hizo extremadamente popular en las instalaciones profesionales.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Flujo de trabajo básico de Dante</h3>
+			<p>En un sistema Dante típico:</p>
+			<ul>
+				<li>Los micrófonos se conectan a una caja de escenario digital.</li>
+				<li>La caja de escenario convierte el audio analógico en flujos de red digitales.</li>
+				<li>El audio viaja a través de conmutadores Ethernet.</li>
+				<li>La mesa de mezclas recibe los canales a través de la red.</li>
+				<li>El audio procesado se envía a procesadores de señal digital (DSP), amplificadores o sistemas de grabación.</li>
+			</ul>
+			<p><img id="DanteBox" src="https://www.getdante.com/wp-content/uploads/2024/01/neutrik-DANTE_Adapter-NA2-IO-DLINE-700x313.jpg" alt="Caja de escenario Neutrik para conexiones Dante"></p>
+			<p>Todo el enrutamiento se controla mediante software en lugar de cables de conexión físicos.</p>
+			<p>Esto permite realizar cambios de configuración extremadamente rápidos durante la producción.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Controlador Dante</h3>
+			<p>Dante Controller es el software que se utiliza para gestionar y enrutar los dispositivos Dante.</p>
+			<p>Proporciona una vista matricial donde los transmisores y receptores se pueden conectar con unos simples clics.</p>
+			<p>Comprender el controlador Dante es fundamental para los técnicos audiovisuales profesionales.</p>
+			<p>El software permite a los ingenieros:</p>
+			<ul>
+				<li>Canales de audio de enrutamiento.</li>
+				<li>Supervise el estado del dispositivo.</li>
+				<li>Compruebe la sincronización del reloj.</li>
+				<li>Detectar errores de red.</li>
+				<li>Cambiar el nombre de los dispositivos y canales.</li>
+				<li>Configurar la redundancia.</li>
+			</ul>
+			<p>Muchas situaciones de resolución de problemas del mundo real se solucionan directamente dentro de Dante Controller.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Sincronización de relojes</h3>
+			<p>Los dispositivos de audio digital deben compartir una referencia de tiempo extremadamente precisa llamada reloj.</p>
+			<p>Si los dispositivos no están sincronizados correctamente, pueden aparecer chasquidos, ruidos extraños o inestabilidad en la señal de audio.</p>
+			<p>Dante selecciona automáticamente un dispositivo como reloj maestro preferido.</p>
+			<p>Todos los demás dispositivos se sincronizan con ese dispositivo maestro.</p>
+			<p>La estabilidad del reloj es uno de los aspectos más críticos de los sistemas de audio digital profesionales.</p>
+			<p>Muchos principiantes subestiman la importancia real de la sincronización.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Latencia</h3>
+			<p>La latencia es el retraso entre la entrada de audio en un sistema y su reproducción.</p>
+			<p>Los sistemas Dante están diseñados para funcionar con valores de latencia extremadamente bajos.</p>
+			<p>Los ajustes típicos de latencia de Dante incluyen:</p>
+			<ul>
+				<li>0.25 ms</li>
+				<li>0.5 ms</li>
+				<li>1 ms</li>
+				<li>5 ms</li>
+			</ul>
+			<p>Una menor latencia requiere mejores condiciones de red.</p>
+			<p>Las infraestructuras grandes o complejas pueden requerir configuraciones de latencia ligeramente superiores para garantizar la estabilidad.</p>
+			<p>Los ingenieros profesionales deben comprender el equilibrio entre latencia y fiabilidad.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Conmutadores de red gestionados</h3>
+			<p>Los sistemas Dante profesionales deben utilizar conmutadores gestionados de alta calidad.</p>
+			<p>Si bien los sistemas pequeños a veces funcionan con conmutadores no administrados, las producciones profesionales requieren un mayor control sobre el comportamiento de la red.</p>
+			<p>Las características importantes de los switches deben ser:</p>
+			<ul>
+				<li>Puertos Gigabit Ethernet.</li>
+				<li>Calidad del Servicio (QoS).</li>
+				<li>Escucha del protocolo IGMP.</li>
+				<li>Soporte para VLAN.</li>
+				<li>Fuentes de alimentación redundantes.</li>
+			</ul>
+			<p>La calidad de servicio es especialmente importante porque prioriza los paquetes de audio sobre el tráfico de red menos crítico.</p>
+			<p>Sin una configuración QoS adecuada, la congestión de la red puede afectar al rendimiento del audio.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Redes primarias y secundarias</h3>
+			<p>Los sistemas Dante profesionales suelen utilizar redes redundantes.</p>
+			<p>Cada dispositivo Dante puede tener:</p>
+			<ul>
+				<li>Una conexión de red principal.</li>
+				<li>Una red de respaldo secundaria.</li>
+			</ul>
+			<p>Si la red principal falla, el audio continúa automáticamente a través de la ruta secundaria.</p>
+			<p>Esta redundancia es fundamental en la radiodifusión, los teatros y las grandes producciones en directo, donde las interrupciones son inaceptables.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Problemas comunes</h3>
+			<p>Las redes de audio son potentes, pero la resolución de problemas requiere conocimientos tanto de audio como de informática.</p>
+			<p>Entre los problemas comunes del mundo real se incluyen:</p>
+			<ul>
+				<li>Dirección IP incorrecta.</li>
+				<li>Conflictos de sincronización del reloj.</li>
+				<li>Bucles de red.</li>
+				<li>Configuración incorrecta del switch.</li>
+				<li>Cables Ethernet dañados.</li>
+				<li>Tráfico multicast excesivo.</li>
+			</ul>
+			<p>Muchos técnicos que se incorporan a los entornos audiovisuales modernos descubren que el conocimiento de redes es ahora tan importante como la ingeniería de audio tradicional.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Consejos importantes</h3>
+			<p>Al trabajar con sistemas de audio en red por primera vez:</p>
+			<ul>
+				<li>Etiquete todos los dispositivos claramente.</li>
+				<li>Conservar diagramas de red.</li>
+				<li>Utilice cables Ethernet certificados.</li>
+				<li>Evite configuraciones de switch aleatorias.</li>
+				<li>Supervise el estado del reloj continuamente.</li>
+				<li>Comprenda el flujo de la señal antes de solucionar problemas.</li>
+			</ul>
+			<p>Muchos problemas de audio en las producciones modernas son, en realidad, problemas de red.</p>
+			<p>Es fundamental un proceso de resolución de problemas tranquilo y metódico.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>El futuro del audio profesional</h3>
+			<p>Las redes de audio continúan expandiéndose rápidamente en toda la industria audiovisual.</p>
+			<p>Los grandes recintos, las instalaciones de radiodifusión y las producciones itinerantes dependen cada vez más de infraestructuras basadas en IP.</p>
+			<p>Los técnicos que comprenden Dante y los conceptos de redes profesionales tienen una gran ventaja en las carreras audiovisuales modernas.</p>
+			<p>Hoy en día, los ingenieros de audio ya no trabajan solo con micrófonos y mesas de mezclas, sino que también gestionan infraestructuras digitales y sistemas en red.</p>
+		</div>
+
+		<!--<div class="info-block">
+			<h3>Common mistakes</h3>
+			<p></p>
+			<p></p>
+		</div>-->
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="14_broadcastaudio_es.html">← Anterior</a>
+			<a href="00_sound_es.html">SONIDO →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visita nuestra web de noticias en Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>

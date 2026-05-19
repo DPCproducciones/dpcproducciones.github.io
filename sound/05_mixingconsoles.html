@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="DPCproducciones">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mixing Consoles and Signal Flow | DPCproducciones TecnicoAV</title>
+
+<meta name="description" content="Learn how professional audio mixing consoles work, including signal flow, gain staging, EQ, buses, aux sends, monitor systems and live sound mixing techniques.">
+<meta name="keywords" content="Mixing consoles, audio mixer, signal flow, gain staging, EQ, auxiliary sends, buses, live sound, studio mixing, audiovisual training">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang="en" href="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+<link rel="alternate" hreflang="es" href="https://dpcproducciones.github.io/sound/05_mixingconsoles_es.html">
+<link rel="alternate" hreflang="x-default" href="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mixing Consoles and Signal Flow | DPCproducciones TecnicoAV">
+<meta property="og:description" content="Professional audiovisual training about audio mixers, signal flow and live sound systems.">
+<meta property="og:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dpcproducciones.github.io/sound/05_mixingconsoles.html">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mixing Consoles and Signal Flow | DPCproducciones TecnicoAV">
+<meta name="twitter:description" content="Learn professional audio mixing consoles and signal routing systems.">
+<meta name="twitter:image" content="https://dpcproducciones.github.io/img/DPCproducciones_Logo.png">
+
+<link rel="icon" href="../img/favicon.jpg">
+
+<link rel="stylesheet" href="../css/dpcproduccionesgithub.css">
+<style type="text/css">
+#TecnicoAV_LogoCircle {
+ width:100%;
+ max-width:150px;
+ border-radius:50%;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#TecnicoAV_Logo {
+ width:100%;
+ max-width:200px;
+ border-radius:5px;
+ box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#AudioMixingConsole {
+ width:100%;
+ max-width:500px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="menu">
+		<button id="openTechMenu" class="">☰</button>
+	</div><!--/menu-->
+	<!-- OVERLAY -->
+	<div id="techOverlay" class="tech-overlay"></div>
+	<!-- SIDEBAR -->
+	<div id="techSidebar" class="tech-sidebar">
+		<div class="tech-sidebar-header">
+			<button id="closeTechMenu" class="close-sidebar">
+				<span>Technical Menu</span>
+				<span style="float:right;">✕</span>
+			</button>
+		</div>
+		<button class="accordion">🔊 SOUND</button>
+		<div class="panel">
+			<a href="00_sound.html">Sound Index</a>
+			<a href="01_physicsofsound.html">Physics of Sound</a>
+			<a href="02_humanear.html">Human Ear</a>
+			<a href="03_microphones.html">Microphones</a>
+			<a href="04_audioconnectors.html">Connectors</a>
+			<a href="05_mixingconsoles.html">Mixing Consoles</a>
+			<a href="06_loudspeakers.html">Loudspeakers</a>
+			<a href="07_acoustics.html">Acoustics</a>
+			<a href="08_digitalaudio.html">Digital Audio</a>
+			<a href="09_equalization.html">Equalization</a>
+			<a href="10_dynamicsprocessing.html">Dynamic Processing</a>
+			<a href="11_audioeffects.html">Audio Effects</a>
+			<a href="12_wirelesssystems.html">Wireless Systems</a>
+			<a href="13_livesound.html">Live sound</a>
+			<a href="14_broadcastaudio.html">Sound for Video</a>
+			<a href="15_audionetworking.html">Audio Networking</a>
+		</div>
+		<button class="accordion">🎥 VIDEO</button>
+		<div class="panel">
+			<a href="../video/video.html">Video Index</a>
+		</div>
+		<!-- LIGHTING
+		<button class="accordion">💡 Lighting</button>
+		<div class="panel">
+			<a href="../lighting/lighting.html">Lighting Index</a>
+		</div> -->
+	</div><!--/techSidebar-->
+
+	<div class="lang">
+		<a href="#" style="color:#777;">🇬🇧 EN</a>
+		<br>
+		<a href="05_mixingconsoles_es.html">🇪🇸 ES</a>
+	</div><!--/lang-->
+
+	<header>
+		<h1 class="seo-title">DPCproducciones TecnicoAV | Mixing consoles and professional audio signal flow</h1>
+		<a href="../index.html"><img src="../img/DPCproducciones_Logo.png" alt="DPCproducciones logo" width="220px"></a>
+		<nav>
+			<a href="../index.html">Home</a>
+			<a href="../tecnicoav.html" style="color:#777;">TecnicoAV</a>
+			<a href="../apps.html">Apps</a>
+			<a href="../privacy.html">Privacy</a>
+			<a href="../contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="breadcrumbs">
+			<a href="../index.html">Home</a> >
+			<a href="../tecnicoav.html">TecnicoAV</a> >
+			<a href="00_sound.html">Sound</a> >
+			<span>Mixing Consoles</span>
+		</div>
+
+		<div class="tech-menu">
+			<a class="active" href="00_sound.html">Sound</a>
+			<a href="../video/video.html">Video</a>
+		</div>
+
+		<h2>Mixing Consoles</h2>
+		<p>The mixing console is the center of most professional audio systems.</p>
+		<p>It allows technicians to control microphones, instruments, playback systems, effects and loudspeakers.</p>
+		<p>Understanding signal flow is one of the most important skills in audiovisual technology and sound engineering.</p>
+
+		<div class="info-block">
+			<h3>Mixing Console</h3>
+			<p>A mixing console, also called an audio mixer or sound desk, is a device used to combine, process and distribute audio signals. They can be analog or digital.</p>
+			<p><img id="AudioMixingConsole" src="https://www.getdante.com/wp-content/uploads/2024/01/soundcraft-vi2000_1200px-700x298.png" alt="Audio mixing console"></p>
+			<p>Mixing consoles are used in:</p>
+			<ul>
+				<li>Live concerts and festivals.</li>
+				<li>Recording studios.</li>
+				<li>Television studios and Theatres.</li>
+				<li>Broadcast facilities.</li>
+				<li>Streaming productions.</li>
+				<li>Conferences and events.</li>
+			</ul>
+		</div>
+
+		<div class="info-block">
+			<h3>Audio signal flow</h3>
+			<p>Signal flow describes the path that audio follows through the system.</p>
+			<p>A typical signal chain may include:</p>
+			<ul>
+				<li>Microphone or audio source.</li>
+				<li>Preamp.</li>
+				<li>Equalizer (EQ).</li>
+				<li>Dynamics processing.</li>
+				<li>Fader.</li>
+				<li>Bus routing.</li>
+				<li>Amplifier or powered speaker.</li>
+			</ul>
+			<p>Understanding the signal path helps technicians diagnose problems quickly.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Input channels</h3>
+			<p>Each channel on a mixer receives one audio signal.</p>
+			<p>Typical channel controls include:</p>
+			<ul>
+				<li>Gain or trim.</li>
+				<li>EQ controls.</li>
+				<li>Auxiliary sends.</li>
+				<li>Pan control.</li>
+				<li>Mute button.</li>
+				<li>Solo/PFL.</li>
+				<li>Fader.</li>
+			</ul>
+			<p>Large productions may use dozens or even hundreds of channels simultaneously.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Gain staging</h3>
+			<p>Gain staging is the process of setting correct signal levels throughout the audio system.</p>
+			<p>Proper gain structure prevents:</p>
+			<ul>
+				<li>Distortion.</li>
+				<li>Clipping.</li>
+				<li>Noise.</li>
+				<li>Weak signal levels.</li>
+			</ul>
+			<p>The preamp gain should be adjusted carefully before using the channel fader.</p>
+			<p>Many beginner problems in live sound are caused by incorrect gain staging.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Equalization (EQ)</h3>
+			<p>EQ controls allow technicians to modify frequency ranges.</p>
+			<p>Common EQ controls include:</p>
+			<ul>
+				<li>High frequencies.</li>
+				<li>Mid frequencies.</li>
+				<li>Low frequencies.</li>
+				<li>Parametric EQ.</li>
+				<li>High-pass filters.</li>
+			</ul>
+			<p>EQ is used to improve clarity, reduce feedback and balance instruments or voices.</p>
+			<p>Excessive EQ can damage the natural sound of a mix.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Auxiliary sends and monitor mixes</h3>
+			<p>Auxiliary sends, often called aux sends, are used to create separate mixes.</p>
+			<p>Common applications:</p>
+			<ul>
+				<li>Stage monitor systems.</li>
+				<li>In-ear monitoring.</li>
+				<li>Effects processors.</li>
+				<li>Broadcast feeds.</li>
+			</ul>
+			<p>Musicians on stage usually require different monitor mixes depending on what they need to hear.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Buses and subgroups</h3>
+			<p>Buses combine multiple signals into a single output path.</p>
+			<p>Subgroups help organize channels such as:</p>
+			<ul>
+				<li>Drums.</li>
+				<li>Vocal choirs.</li>
+				<li>Playback systems.</li>
+				<li>Orchestra sections.</li>
+			</ul>
+			<p>This simplifies large productions and allows group processing.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Analog and digital mixers</h3>
+			<p>Analog mixers use physical electronic circuits for signal processing.</p>
+			<p>Digital mixers convert audio into digital data and provide advanced processing features.</p>
+			<p>Digital consoles often include:</p>
+			<ul>
+				<li>Internal effects.</li>
+				<li>Scene memory.</li>
+				<li>Remote control.</li>
+				<li>Network audio.</li>
+				<li>Multitrack recording.</li>
+			</ul>
+			<p>Most modern live productions now use digital consoles.</p>
+		</div>
+
+		<div class="info-block">
+			<h3>Common mistakes</h3>
+			<ul>
+				<li>Incorrect gain.</li>
+				<li>Too much EQ.</li>
+				<li>Ignoring signal routing.</li>
+				<li>Bad monitor mixes.</li>
+				<li>Overloading outputs.</li>
+				<li>Poor channel organization.</li>
+			</ul>
+			<p>Professional engineers develop organized workflows to avoid technical problems during productions.</p>
+			<p>A skilled audio technician must understand routing, troubleshooting, communication and fast decision-making under pressure.</p>
+		</div>
+
+		<!--<h3>Recommended Video</h3>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/Is_wu0VRIqQ" title="Physics of Sound" allowfullscreen></iframe>
+		</div>-->
+
+		<div class="lesson-nav">
+			<a href="04_audioconnectors.html">← Prev Topic</a>
+			<a href="06_loudspeakers.html">Next Topic →</a>
+		</div>
+
+		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+
+		<br><hr width="60%"><br>
+		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
+	</main>
+</div><!--/container-->
+
+	<!-- Back to Top -->
+	<a href="#top" id="BackTopPage" class="back-to-top"><img src="../img/BackTopPage.png" width="100%"></a>
+	<div id="ProgressBar"></div>
+
+<footer>
+	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
+	<a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a>
+</footer>
+
+<script type="text/javascript">
+document.querySelector(".back-to-top").style.display = "none";
+window.addEventListener("scroll",function(){
+	let alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+	let porcentaje = Math.round((window.scrollY / alturaTotal) * 100);
+	document.getElementById("ProgressBar").style.background = `linear-gradient(to right, #bdbdbd ${porcentaje}%, transparent ${porcentaje}%)`;
+	if(window.scrollY > 250){document.querySelector(".back-to-top").style.display = "block";
+	}else{document.querySelector(".back-to-top").style.display = "none";}
+});
+
+
+/* ELEMENTS */
+const sidebar = document.getElementById("techSidebar");
+const overlay = document.getElementById("techOverlay");
+const openBtn = document.getElementById("openTechMenu");
+const closeBtn = document.getElementById("closeTechMenu");
+
+/* OPEN MENU */
+openBtn.addEventListener("click", () => {
+	sidebar.classList.add("open");
+	overlay.classList.add("open");
+	openBtn.style.visibility = "hidden";
+});
+
+/* CLOSE MENU */
+function closeSidebar(){
+	sidebar.classList.remove("open");
+	overlay.classList.remove("open");
+	openBtn.style.visibility = "visible";
+}
+
+/* CLOSE EVENTS */
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+/* ACCORDION */
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+	acc.addEventListener("click", function(){
+		accordions.forEach(other => {
+			if(other !== this){
+				other.classList.remove("active");
+				other.nextElementSibling.style.maxHeight = null;
+			}
+		});
+		this.classList.toggle("active");
+		const panel = this.nextElementSibling;
+		if(panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		}else{
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+</body>
+</html>
