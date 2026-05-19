@@ -465,3 +465,33 @@ footer {
 footer a{
  color: #777;
 }
+
+/* PAYPAL */
+.donate-box{
+	max-width:500px;
+	margin:40px auto;
+	padding:25px;
+	background:white;
+	border-radius:12px;
+	box-shadow:0 4px 15px rgba(0,0,0,0.1);
+	text-align:center;
+}
+.donate-box h3{
+	margin-top:0;
+	color:#1976D2;
+}
+.donate-button{
+	display:inline-block;
+	margin-top:15px;
+	padding:12px 20px;
+	background:#0070ba;
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius:8px;
+	transition:0.2s;
+}
+.donate-button:hover{
+	background:#005ea6;
+	transform:translateY(-2px);
+}
