@@ -35,23 +35,348 @@
 
 <link rel="stylesheet" href="css/dpcproduccionesgithub.css">
 <style type="text/css">
-#DPCproducciones_ImagenSonido {
- width:100%;
- max-width:650px;
- border-radius:10px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+#TecnicoAV_LogoCircle{
+ width:220px;
+ border-radius:50%;
+ transition:0.2s;
 }
-#DPCproducciones_LogoBig {
- width:100%;
- max-width:500px;
- border-radius:10px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+#TecnicoAV_LogoCircle:hover{
+ transform:translateY(-3px);
 }
-#DPCproducciones_LogoInfor {
- width:100%;
- max-width:250px;
+#TecnicoAV_Logo {
+ width:210px;
+ padding:5px;
+ transition:0.2s;
+ border:1px solid rgba(255,255,255,0.5);
  border-radius:5px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+
+
+/* INDEX HERO */
+.index-hero-section{
+	padding:20px;
+	background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+		url('img/DPCproducciones_portada.jpg');
+	background-size:cover; background-position:center;
+	border-radius:0 0 20px 20px;
+	overflow:hidden;
+	color:white;
+}
+.index-hero-section h2{
+	font-size:48px;
+	line-height:1.3;
+}
+
+/* GRID - CARD */
+.index-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+	gap:30px;
+}
+.index-card{
+	background:rgba(255,255,255,0.1);
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter:blur(10px);
+	padding:25px 20px;
+	transition:0.2s;
+	border-top:4px solid #aaa;
+	border-radius:20px;
+	line-height:1.5;
+}
+.index-card:hover{
+	transform:translateY(-8px);
+	background:rgba(255,255,255,0.15);
+}
+.index-card h3{
+	font-size:26px;
+}
+.index-hero-text{
+	font-size:20px;
+	line-height:1.5;
+	max-width:800px;
+	margin:auto;
+	padding:5px;
+	color:#ddd;
+}
+/* MOBILE HERO */
+.mobile-buttons{display:none;}
+@media(max-width:768px){
+	.index-hero-section h2{
+		font-size:36px;
+		line-height:1.3;
+	}
+	.index-hero-text{
+		font-size:18px;
+	}
+	/* Hide large cards on mobile */
+	.index-grid{display:none;}
+	/* Compact mobile buttons */
+	.mobile-buttons{
+		display:flex;
+		flex-direction:column;
+		gap:15px;
+		max-width:320px;
+	}
+	.mobile-buttons a{
+		display:block;
+		padding:16px 20px;
+		border-radius:12px;
+		text-decoration:none;
+		font-size:18px;
+		font-weight:bold;
+		transition:0.2s;
+	}
+	.mobile-buttons a:hover{
+		transform:translateY(-2px);
+	}
+	.mobile-btn-av{
+		background:#2196F3;
+		color:#111;
+	}
+	.mobile-btn-apps{
+		background:#3DDC84;
+		color:#111;
+	}
+}
+
+/* TECNICOAV STRIP */
+.index-tecnicoav-section{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	gap:50px;
+	padding:40px 20px;
+	background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+		url('img/Background_WaveForm.jpg');
+	background-size:cover; background-position:center;
+	color:white;
+	border-radius:20px;
+	overflow:hidden;
+}
+.index-tecnicoav-content{
+	max-width:700px;
+}
+.index-tecnicoav-content h3{
+	font-size:38px;
+	margin-bottom:20px;
+}
+.index-tecnicoav-content p{
+	font-size:19px;
+	line-height:1.8;
+	color:#ddd;
+}
+/* MOBILE */
+@media(max-width:768px){
+	.index-tecnicoav-section{
+		padding:50px 20px;
+		gap: 0px;
+	}
+	.index-tecnicoav-content h3{
+		font-size:30px;
+	}
+	.index-tecnicoav-content p{
+		font-size:18px;
+	}
+}
+
+/* SERVICES SECTION */
+.index-services-section{
+	margin-top:40px;
+	padding:20px;
+	background:
+	linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+		url('img/DPCproducciones_ImagenSonido.jpg');
+	background-size:cover;
+	background-position:center;
+	border-radius:20px;
+	color:white;
+}
+.index-services-section h3{
+	font-size:40px;
+	margin-bottom:20px;
+}
+.index-services-text{
+	max-width:850px;
+	margin:0 auto 50px auto;
+	font-size:20px;
+	line-height:1.7;
+	color:#ddd;
+}
+.index-service-card{
+	background:rgba(255,255,255,0.08);
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter:blur(10px);
+	padding:30px 25px;
+	transition:0.25s;
+	border-top:4px solid #aaa;
+	border-radius:18px;
+}
+.index-service-card:hover{
+	transform:translateY(-6px);
+	background:rgba(255,255,255,0.12);
+}
+.icon-big{
+	font-size:42px;
+	margin-bottom:15px;
+}
+.index-service-card h4{
+	font-size:22px;
+	margin-bottom:15px;
+}
+.index-service-card p{
+	font-size:16px;
+	line-height:1.7;
+	color:#ddd;
+}
+/* MOBILE */
+@media(max-width:768px){
+	.index-services-section{
+		padding:50px 20px;
+	}
+	.index-services-section h3{
+		font-size:30px;
+	}
+	.index-services-text{
+		font-size:18px;
+	}
+	.index-service-card h4{
+		font-size:20px;
+	}
+	.index-service-card p{
+		font-size:15px;
+	}
+}
+
+/* APPS SECTION */
+.index-apps-section{
+	padding: 20px;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+		url('img/DPCproducciones_LogoBig.jpg');
+	background-size:cover; background-position:center;
+	border-radius:20px;
+	overflow:hidden;
+	color:white;
+}
+.index-apps-section h3{
+	font-size:40px;
+}
+.index-apps-section h4{
+	font-size:22px;
+}
+.index-apps-section a{
+	color:#111;
+}
+.index-apps-text{
+	font-size:20px;
+	line-height: 1.5;
+	color:#ddd;
+}
+.index-apps-cards{
+	background:rgba(255,255,255,0.1);
+	border:1px solid rgba(255,255,255,0.15);
+	border-radius:10px;
+}
+/* MOBILE */
+@media(max-width:768px){
+	.index-apps-section h3{
+		font-size:28px;
+	}
+	.index-apps-text{
+		font-size:18px;
+	}
+}
+
+/* PLAY BANNER */
+.googleplay-banner{
+	color:white;
+	padding: 10px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	gap:30px;
+	background:rgba(255,255,255,0.08);
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter:blur(10px);
+	border:1px solid rgba(255,255,255,0.1);
+	border-radius:18px;
+}
+.googleplay-banner h3{
+	font-size:24px;
+}
+.googleplay-banner p{
+	color:#ddd;
+	line-height:1.5;
+}
+.googleplay-btn{
+	transition:0.2s;
+}
+.googleplay-btn:hover{
+	transform:translateY(-3px);
+}
+/* MOBILE */
+@media(max-width:768px){
+	.googleplay-banner{
+		justify-content:center;
+	}
+	.googleplay-banner h3{
+		font-size:20px;
+	}
+	.googleplay-banner p{
+		margin: 0 auto 0 auto;
+		padding: 0 auto 20px auto;
+	}
+	.googleplay-btn{
+		margin-bottom: 20px;
+	}
+}
+
+/* BLOG SECTION */
+.blog-section{
+	padding: 20px 20px 40px 20px;
+	background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+		url('img/DPCproducciones_LogoInfor.jpg');
+	background-size:cover; background-position:center;
+	border-radius:20px;
+	color: white;
+}
+.blog-section h3{
+	font-size:24px;
+}
+.blog-section p{
+	font-size:18px;
+	max-width:700px;
+	margin:auto;
+	line-height:1.5;
+	color:#ddd;
+}
+/* MOBILE */
+@media(max-width:768px){
+	.blog-section h3{
+		font-size:24px;
+	}
+	.blog-section p{
+		font-size:17px;
+	}
+}
+
+/* CATEGORY COLORS */
+.sound{
+	border-top-color:#2196F3;
+}
+.video{
+	border-top-color:#FFC107;
+}
+.lighting{
+	border-top-color:#F44336;
+}
+.network{
+	border-top-color:#9C27B0;
+}
+.apps{
+	border-top-color:#3DDC84;
 }
 </style>
 </head>
@@ -77,50 +402,129 @@
 	</header>
 
 	<main>
-		<h2>Tecnología Audiovisual<br>y<br>Aplicaciones Android</h2>
-		<p><img id="DPCproducciones_ImagenSonido" src="img/DPCproducciones_ImagenSonido.jpg" alt="Tecnología audiovisual profesional"></p>
-		<br>
+	
+	<section class="index-hero-section">
+		<h2>Tecnología Audiovisual Profesional<br> & Web Android Apps</h2>
+		<div class="index-grid">
+			<!-- TecnicoAV -->
+			<div class="index-card sound">
+				<div class="icon-big">🎬</div>
+				<h3>Tecnología audiovisual</h3>
+				<p>Tutoriales profesionales, documentación técnica, audio, vídeo, iluminación, mesas de mezclas, micrófonos, altavoces, sistemas de monitorización, manejo de cámaras, streaming, grabación.</p>
+				<a class="button tecnicoav" href="tecnicoav_es.html">🎧 TécnicoAV</a>
+			</div>
+			<!-- Apps -->
+			<div class="index-card apps">
+				<div class="icon-big">💻</div>
+				<h3>Web & Android Apps</h3>
+				<p>Diseñador de páginas web interactivas, desarrollo de aplicaciones Android, HTML, CSS, Javascript, Java, C, C++, C#, PHP, Arduino, Android Studio, Unity3D, Premiere, After Effects, jQuery.</p>
+				<a class="button appweb" href="apps_es.html">📱 Web & Apps</a>
+			</div>
+		</div><!--/index-grid-->
 		
-		<div class="grid">
-			<div class="card">
-				<h3>🎬 TécnicoAV</h3>
-				<p>Documentación técnica audiovisual, tutoriales profesionales, imagen sonido iluminación, mantenimiento AV.</p>
-				<p><a href="tecnicoav_es.html"><img src="img/TecnicoAV_LogoCircle.jpg" alt="TecnicoAV logo" width="100px" style="border-radius:50%;"></a></p>
-				<a class="button" href="tecnicoav_es.html">Ver tutoriales y formación</a>
-			</div><!--/card-->
-		</div><!--/grid-->
+		<!-- MOBILE HERO BUTTONS -->
+		<div class="mobile-buttons">
+			<p><a class="mobile-btn-av" href="tecnicoav_es.html">🎬 TécnicoAV Tutoriales</a></p>
+			<p><a class="mobile-btn-apps" href="apps_es.html">📱 Web & Android Apps</a></p>
+		</div>
 		
-		<br><br><hr width="60%"><br>
+		<br><br><p class="index-hero-text">Tutoriales profesionales, documentación técnica y conocimientos prácticos sobre sonido, vídeo, iluminación, televisión, eventos en directo y producción audiovisual multimedia.</p><br>
+	</section>
+	<br><br>
+	
+	<!-- TECNICOAV -->
+	<section class="index-tecnicoav-section">
+			<p><a href="tecnicoav_es.html"><img id="TecnicoAV_LogoCircle" src="img/TecnicoAV_LogoCircle.jpg" alt="Link to TecnicoAV, circle logo"></a></p>
+			<div class="index-tecnicoav-content">
+				<h3>🎬 TécnicoAV Formación Técnica</h3>
+				<p>Aprende tecnología audiovisual profesional con tutoriales prácticos sobre sistemas de vídeo y audio, imagen y sonido, iluminación, streaming, producción en directo, radiodifusión broadcast, y mantenimiento audiovisual.</p>
+				<p><a class="button" href="tecnicoav_es.html"><img id="TecnicoAV_Logo" src="img/TecnicoAV_Logo.jpg" alt="Enlace a TécnicoAV"></a></p>
+			</div>
+	</section>
+	
+	<!-- PROFESSIONAL SERVICES -->
+	<section class="index-services-section">
+		<h3>👨‍💼 Servicios profesionales</h3>
+		<p class="index-services-text">Técnico audiovisual profesional, creador multimedia y desarrollador de Android disponible para colaboraciones freelance, producciones técnicas y proyectos audiovisuales.</p>
+		<div class="index-grid">
+			<!-- AUDIOVISUAL -->
+			<div class="index-service-card sound">
+				<div class="icon-big">🎥</div>
+				<h4>Retransmisiones & Broadcast</h4>
+				<p>Experiencia profesional en estudios de televisión, eventos en directo, sistemas de imagen y sonido, manejo de cámaras, mesas de mezclas, micrófonos y altavoces, iluminación, y trabajos técnicos en radiodifusión.</p>
+				<p style="font-size:14px;color:#666">Vídeo Sonido Broadcast Cámaras Iluminación</p>
+			</div>
+			<!-- DEVELOPMENT -->
+			<div class="index-service-card apps">
+				<div class="icon-big">💻</div>
+				<h4>Diseño Web & Android Apps</h4>
+				<p>Diseño de páginas web multimedia interactivas. Desarrollo de aplicaciones con Android Studio (apps disponibles en Google Play). Realización de videojuegos con Unity3D. Software: GIMP, Premier, After Effects, Inkscape...</p>
+				<p style="font-size:14px;color:#666">Android HTML/CSS/JS Java Unity3D</p>
+			</div>
+			<!-- TRAINING -->
+			<div class="index-service-card network">
+				<div class="icon-big">🎓</div>
+				<h4>Formación Técnica</h4>
+				<p>Formación técnica audiovisual y programación informática. Documentación técnica y recursos multimedia educativos, temario audiovisual online para usuarios principiantes y avanzados.</p>
+				<p style="font-size:14px;color:#666">Formación Audiovisual Cursos Documentación</p>
+			</div><br><br>
+		</div><!--/index-grid-->
+		<p><a class="button contact" href="contact_es.html">📩 Contacto para proyectos y contrataciones</a></p><br>
+	</section>
+	<br><br>
+	
+	<!-- APPS SECTION -->
+	<section class="index-apps-section"><br>
+		<h3>Nuestras aplicaciones Android</h3>
+		<p class="index-apps-text">Juegos, utilidades, literatura, música y aplicaciones educativas disponibles en Google Play.</p><br><br>
+			<div class="index-card apps">
+				<div class="index-grid">
+					<div class="index-apps-cards">
+						<h4>🎲 Juegos</h4>
+						<p>Divertidos juegos de rompecabezas, matemáticas y juegos clásicos.</p>
+						<p><a class="button appweb" href="apps_es.html">🎮 Jugar</a></p><br>
+					</div>
+					<div class="index-apps-cards">
+						<h4>📚 Literatura</h4>
+						<p>Libros de dominio público y autores clásicos para dispositivos Android.</p>
+						<p><a class="button appweb" href="apps_es.html">📜 Leer libros</a></p><br>
+					</div>
+					<div class="index-apps-cards">
+						<h4>🎨 Arte & Música</h4>
+						<p>Dibujo, pintura, galerías de arte, herramientas musicales y aplicaciones educativas.</p>
+						<p><a class="button appweb" href="apps_es.html">🎵 Disfrutar</a></p><br>
+					</div>
+				</div>
 		
-		<br><p><img id="DPCproducciones_LogoBig" src="img/DPCproducciones_LogoBig.jpg" alt="DPCproducciones TecnicoAV"></p>
+		<!-- MOBILE HERO BUTTONS -->
+		<div class="mobile-buttons">
+			<p style="font-size:40px;">🎲 📚 🎨</p>
+			<p style="color:white;">Divertidos juegos de rompecabezas y matemáticas, libros de dominio público, galerías de arte, herramientas musicales, dibujo y pintura.</p>
+			<a class="mobile-btn-apps" href="apps_es.html">📱 Android Apps</a>
+		</div>
+		</div><br>
 		
-		<h3 style="">Descubre nuestras aplicaciones</h3>
-		<div class="grid">
-			<div class="card">
-				<h4>🎮 Juegos</h4>
-				<p>Juegos divertidos y educativos.</p>
-				<a class="button" href="apps_es.html">Juega</a>
-			</div><!--/card-->
-			<div class="card">
-				<h4>📚 Literatura</h4>
-				<p>Libros y autores clásicos de dominio público.</p>
-				<a class="button" href="apps_es.html">Explora</a>
-			</div><!--/card-->
-			<div class="card">
-				<h4>🎨 Arte & Música</h4>
-				<p>Galerías de arte, música, pintura y dibujo.</p>
-				<a class="button" href="apps_es.html">Disfruta</a>
-			</div><!--/card-->
-		</div><!--/grid-->
-
-		<br><p><img id="DPCproducciones_LogoInfor" src="img/DPCproducciones_LogoInfor.jpg" alt="DPCproducciones programación informática"></p>
-
-		<h4>Apps disponibles en Google Play</h4>
-		<p>📲 Descargue nuestras aplicaciones.</p>
-		<p><a href="https://play.google.com/store/apps/dev?id=5913401738369811930" target="_blank" rel="noopener noreferrer">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" alt="Consíguelas en Google Play"></a></p>
-		<br><hr width="60%"><br>
-		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visite nuestra web de noticias en Blogger.</a></p><br>
+		<!-- GOOGLE PLAY BANNER -->
+		<div class="googleplay-banner">
+			<div>
+				<h3>📲 Disponible en Google Play</h3>
+				<p>Descarga nuestras aplicaciones para Android directamente desde Google Play Store.</p>
+			</div>
+			<div class="googleplay-btn">
+				<p><a href="https://play.google.com/store/apps/dev?id=5913401738369811930" target="_blank" rel="noopener noreferrer">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/250px-Google_Play_Store_badge_EN.svg.png" width="200px" alt="Consíguelas en Google Play"></a></p>
+			</div>
+		</div><br>
+	</section>
+	<hr class="hr">
+	
+	<!-- BLOG SECTION -->
+	<section class="blog-section">
+		<h3>📰 Noticias y actualizaciones</h3>
+		<p>Visita nuestro sitio web de Blogger para obtener actualizaciones, nuevos proyectos, artículos técnicos y noticias sobre las aplicaciones.</p>
+		<br><p><a class="button blog" href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">👉 Visita nuestro Blog</a></p>
+	</section>
+	<br><br>
 	</main>
 </div><!--/container-->
 

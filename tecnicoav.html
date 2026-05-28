@@ -36,18 +36,123 @@
 
 <link rel="stylesheet" href="css/dpcproduccionesgithub.css">
 <style type="text/css">
-#TecnicoAV_LogoCircle {
- width:100%;
- max-width:200px;
+#TecnicoAV_LogoCircle{
+ width:220px;
  border-radius:50%;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+ transition:0.2s;
+}
+#TecnicoAV_LogoCircle:hover{
+ transform:translateY(-3px);
 }
 #TecnicoAV_Logo {
- width:100%;
- max-width:200px;
+ width:210px;
+ padding:5px;
+ transition:0.2s;
+ border:1px solid rgba(255,255,255,0.5);
  border-radius:5px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
+
+
+/* TECNICOAV HERO */
+.tecnicoav-hero-section{
+	padding:20px 20px 10px 20px;
+	border-radius:0 0 20px 20px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	gap:50px;
+	background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
+		url('img/DPCproducciones_naranja.jpg');
+	background-size:cover; background-position:center;
+	color:white;
+	border-radius:0 0 20px 20px;
+	overflow:hidden;
+}
+.tecnicoav-content{
+	max-width:700px;
+}
+.tecnicoav-content h3{
+	font-size:38px;
+	margin:20px;
+}
+.tecnicoav-content p{
+	font-size:18px;
+	line-height:1.8;
+	color:#ddd;
+}
+/* MOBILE */
+@media(max-width:768px){
+	.tecnicoav-hero-section{
+		gap:0px;
+	}
+	.tecnicoav-content{
+		text-align:center;
+	}
+	.tecnicoav-content h3{
+		font-size:30px;
+	}
+	
+	#TecnicoAV_LogoCircle{
+		width:190px;
+	}
+}
+
+
+.tecnicoav-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+	gap:20px;
+	width:100%;
+}
+.tecnicoav-card{
+ position:relative;
+ overflow:hidden;
+ background: white;
+ border-radius: 10px;
+ border-top:4px solid #aaa;
+ padding: 0px 20px 30px 20px;
+ transition: 0.2s;
+}
+.tecnicoav-card:hover{
+ transform:translateY(-5px);
+}
+.tecnicoav-card::before{
+ content:"";
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:6px;
+ background:rgba(200,200,200,0.25);
+}
+.tecnicoav-card h4{
+ font-size:20px;
+}
+.tecnicoav-card p {
+ line-height:1.5;
+ color: #666;
+ font-size: 14px;
+}
+
+
+/* CATEGORY COLORS */
+.sound{
+	border-top-color:#2196F3;
+}
+.video{
+	border-top-color:#FFC107;
+}
+.lighting{
+	border-top-color:#F44336;
+}
+.network{
+	border-top-color:#9C27B0;
+}
+.apps{
+	border-top-color:#3DDC84;
+}
+
 </style>
 </head>
 
@@ -68,26 +173,26 @@
 		</div>
 		<button class="accordion">🔊 SOUND</button>
 		<div class="panel">
-			<a href="sound/00_sound.html">Sound Index</a>
-			<a href="sound/01_physicsofsound.html">Physics of Sound</a>
-			<a href="sound/02_humanear.html">Human Ear</a>
-			<a href="sound/03_microphones.html">Microphones</a>
-			<a href="sound/04_audioconnectors.html">Connectors</a>
-			<a href="sound/05_mixingconsoles.html">Mixing Consoles</a>
-			<a href="sound/06_loudspeakers.html">Loudspeakers</a>
-			<a href="sound/07_acoustics.html">Acoustics</a>
-			<a href="sound/08_digitalaudio.html">Digital Audio</a>
-			<a href="sound/09_equalization.html">Equalization</a>
-			<a href="sound/10_dynamicsprocessing.html">Dynamic Processing</a>
-			<a href="sound/11_audioeffects.html">Audio Effects</a>
-			<a href="sound/12_wirelesssystems.html">Wireless Systems</a>
-			<a href="sound/13_livesound.html">Live sound</a>
-			<a href="sound/14_broadcastaudio.html">Sound for Video</a>
-			<a href="sound/15_audionetworking.html">Audio Networking</a>
+			<a href="sound/00_sound.html">00 - Sound Index</a>
+			<a href="sound/01_physicsofsound.html">01 - Physics of Sound</a>
+			<a href="sound/02_humanear.html">02 - Human Ear</a>
+			<a href="sound/03_microphones.html">03 - Microphones</a>
+			<a href="sound/04_audioconnectors.html">04 - Connectors</a>
+			<a href="sound/05_mixingconsoles.html">05 - Mixing Consoles</a>
+			<a href="sound/06_loudspeakers.html">06 - Loudspeakers</a>
+			<a href="sound/07_acoustics.html">07 - Acoustics</a>
+			<a href="sound/08_digitalaudio.html">08 - Digital Audio</a>
+			<a href="sound/09_equalization.html">09 - Equalization</a>
+			<a href="sound/10_dynamicsprocessing.html">10 - Dynamic Processing</a>
+			<a href="sound/11_audioeffects.html">11 - Audio Effects</a>
+			<a href="sound/12_wirelesssystems.html">12 - Wireless Systems</a>
+			<a href="sound/13_livesound.html">13 - Live sound</a>
+			<a href="sound/14_broadcastaudio.html">14 - Sound for Video</a>
+			<a href="sound/15_audionetworking.html">15 - Audio Networking</a>
 		</div>
 		<button class="accordion">🎥 VIDEO</button>
 		<div class="panel">
-			<a href="video/video.html">Video Index</a>
+			<a href="video/video.html">00 - Video Index</a>
 		</div>
 		<!-- LIGHTING
 		<button class="accordion">💡 Lighting</button>
@@ -115,47 +220,40 @@
 	</header>
 
 	<main>
-		<h2>Audiovisual Technology</h2>
+	<!-- TECNICOAV FEATURE -->
+	<section class="tecnicoav-hero-section">
 		<p><img id="TecnicoAV_LogoCircle" src="img/TecnicoAV_LogoCircle.jpg" alt="DPCproducciones TecnicoAV logo"></p>
-		
-		<h3>Technical areas</h3>
-		
-		<div class="tech-menu">
-			<a href="sound/00_sound.html" class="sound">Sound</a>
-			<a href="video/video.html">Video</a>
+		<div class="tecnicoav-content">
+			<h3>🎬 TecnicoAV - Professional Audiovisual Technology</h3>
+			<p>TécnicoAV is the audiovisual technical division of DPCproducciones, focused on audio video and lighting systems, and audiovisual training.</p>
+			<p>TécnicoAV offers these professional audiovisual tutorials and technical documentation for students of audio and video, multimedia event workers, and audiovisual production staff.</p><br>
 		</div>
+	</section><br><br>
+	
+	<div class="tecnicoav-grid">
+		<div class="tecnicoav-card sound">
+			<h4>🔊 SOUND</h4>
+			<p>Professional tutorials and technical documentation on sound engineering, audio systems, microphones, mixing consoles, loudspeakers, monitors, equalization, networks, recording, live sound and workflows for multimedia productions.</p>
+			<p><a class="button tecnicoav" href="sound/00_sound.html">SOUND</a></p>
+		</div><!--/card-->
 		
-		<div class="grid">
-			
-			<div class="card">
-				<h4>SOUND</h4>
-				<p>Physics of sound, microphones, mixing consoles, effects, speakers.</p>
-				<p><a class="button" href="sound/00_sound.html">SOUND</a></p>
-			</div><!--/card-->
-			
-			<div class="card">
-				<h4>VIDEO</h4>
-				<p>Professional audiovisual documentation about cameras, optics, video systems and image technologies.</p>
-				<p><a class="button" href="video/video.html">VIDEO</a></p>
-			</div><!--/card-->
-			
-		</div><!--/grid-->
-
-		<br><p><img id="TecnicoAV_Logo" src="img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
-
-		<br><hr width="60%">
-		<div class="donate-box">
-			<h3>☕ Support This Project</h3>
-			<p>If TécnicoAV and DPCproducciones resources helped you, consider supporting future development and free tutorials.</p>
-			<p><a class="donate-button"
-				href="https://paypal.me/DPCproducciones" target="_blank" rel="noopener noreferrer">
-				<img id="Paypal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAq1BMVEX///+FlMQAAIMAAIc1TqKyuthve7QAHo4AKZEAJ5AAI49jdLNFWKUACIqTn8n4+fwAJI0AIozq7PQAZdAAeOcAcd8AP7Xf5fLHzuQAgPAAjv8Aiv9j0P/r+P+jrdEAFIwAjP9/ibwAOaAAhv9BtP9czP+56P8AR7Aqov9gzf+M2f8AWcUwp/8Yedggnf9Uxf+q4v9Qr+hj0/+M2v9Uaa4YTKfV8f8wc746jtEyKvaVAAAA2klEQVR4AcTQRRYCMRAA0cBYJ7jbuOMu9z8ZESQ0jzV/W9Em/1SpGoppfUfbAYkyo0awOoOnRhO1FlCAdkcxUOwavPX60mA4+ozjBo+TqTJzPaLzAwCYTENp6rotPUYO0PjRktTNcvRYWqg4K+fzbKFHh0J7OZ1xyWqOYssAYOtys9mstq6IO/RYZ39wubmQ6c+1AqBsO1fQRtLkEQ7PlB2J7uQAO4vocosL+WAyYFcRvVarhScbGEb15s4zl2DciFvM5+gyjZuhV+oyvvPyo3kZ9zPm3H3USq4AAckc4OeYq5wAAAAASUVORK5CYII=" alt="Paypal logo">
-				<br>Donate with PayPal
-			</a></p>
-			<br><p>This project is independently developed and maintained. Your support helps creating more free audiovisual resources.</p>
-		</div>
-		<hr width="60%"><br>
-		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
+		<div class="tecnicoav-card video">
+			<h4>🎥 VIDEO</h4>
+			<p>Professional audiovisual documentation on cameras, lenses, video systems, recording, streaming, broadcast technologies, video routing, quality control and image formats, workflows in television studios and broadcasts.</p>
+			<br><p style="font-size:18px;"><b>Section under construction</b></p>
+		</div><!--/card-->
+	</div><!--/grid-->
+	<hr class="hr">
+	<div class="donate-box">
+		<h3>☕ Support This Project</h3>
+		<p>If these resources helped you, please consider supporting future development and free tutorials.</p>
+		<p><a class="donate-button" href="https://paypal.me/DPCproducciones" target="_blank" rel="noopener noreferrer">
+			<img id="Paypal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAq1BMVEX///+FlMQAAIMAAIc1TqKyuthve7QAHo4AKZEAJ5AAI49jdLNFWKUACIqTn8n4+fwAJI0AIozq7PQAZdAAeOcAcd8AP7Xf5fLHzuQAgPAAjv8Aiv9j0P/r+P+jrdEAFIwAjP9/ibwAOaAAhv9BtP9czP+56P8AR7Aqov9gzf+M2f8AWcUwp/8Yedggnf9Uxf+q4v9Qr+hj0/+M2v9Uaa4YTKfV8f8wc746jtEyKvaVAAAA2klEQVR4AcTQRRYCMRAA0cBYJ7jbuOMu9z8ZESQ0jzV/W9Em/1SpGoppfUfbAYkyo0awOoOnRhO1FlCAdkcxUOwavPX60mA4+ozjBo+TqTJzPaLzAwCYTENp6rotPUYO0PjRktTNcvRYWqg4K+fzbKFHh0J7OZ1xyWqOYssAYOtys9mstq6IO/RYZ39wubmQ6c+1AqBsO1fQRtLkEQ7PlB2J7uQAO4vocosL+WAyYFcRvVarhScbGEb15s4zl2DciFvM5+gyjZuhV+oyvvPyo3kZ9zPm3H3USq4AAckc4OeYq5wAAAAASUVORK5CYII=" alt="Paypal logo">
+			<br>Donate with PayPal</a></p>
+		<br><p>This project is developed and maintained independently. Your contribution helps create more free audiovisual resources.</p>
+	</div>
+	<!--<hr width="60%"><br>
+	<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>-->
 	</main>
 </div><!--/container-->
 

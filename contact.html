@@ -36,29 +36,244 @@
 
 <link rel="stylesheet" href="css/dpcproduccionesgithub.css">
 <style type="text/css">
-#DPCproducciones_Cine {
+/* CONTACT HERO */
+.contact-hero-section{
+	position:relative;
+	width:100%;
+	min-height:550px;
+	padding:20px;
+	background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+		url('img/DPCproducciones_global.jpg');
+	background-size:cover; background-position:center;
+	border-radius:0 0 20px 20px;
+	overflow:hidden;
+	color:white;
+}
+.contact-hero-section h2{
+	font-size:48px;
+	line-height:1.3;
+}
+.contact-hero-section h3{
+	font-size:40px;
+	line-height:1.3;
+}
+.contact-hero-section p{
+	font-size:20px;
+	line-height:1.5;
+	margin:auto;
+	padding:5px;
+	color:#ddd;
+}
+.contact-hero-blur{
+	padding: 10px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	background:rgba(255,255,255,0.08);
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter:blur(10px);
+	border:1px solid rgba(255,255,255,0.1);
+	border-radius:18px;
+}
+
+/* GRID - CARD */
+.contact-services-section h3{
+ font-size:34px;
+ margin-bottom:5px;
+}
+.contact-services-section h4{
+ font-size:28px;
+ margin-bottom:20px;
+}
+.contact-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+ gap:20px;
  width:100%;
- max-width:250px;
- border-radius:10px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
-#TecnicoAV_LogoCircle {
+.contact-card{
+ position:relative;
+ overflow:hidden;
+ background: white;
+ border-radius: 10px;
+ border-left:5px solid #eee;
+ padding: 0px 20px 30px 20px;
+ transition: 0.2s;
+}
+.contact-card:hover{
+ transform:translateY(-5px);
+}
+.contact-card::before{
+ content:"";
+ position:absolute;
+ top:0;
+ left:0;
  width:100%;
- max-width:150px;
- border-radius:50%;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+ height:6px;
+ background:rgba(200,200,200,0.25);
 }
-#TecnicoAV_Logo {
- width:100%;
- max-width:150px;
- border-radius:5px;
- box-shadow:0 5px 20px rgba(0,0,0,0.4);
+.contact-card h4{
+ font-size:20px;
 }
-.card{
- border-top: 4px solid #bbb;
+.contact-card p {
+ line-height:1.5;
+ color: #666;
+ font-size: 14px;
 }
-.card:hover {
- transform: none;
+
+/* LISTS */
+.contact-service-list{
+	list-style:none;
+	padding:0;
+	margin-top:20px;
+	text-align:left;
+}
+.contact-service-list li{
+	padding:8px 0;
+	border-bottom:1px solid #eee;
+	font-size:15px;
+	color:#333;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+	.contact-hero-section{
+		min-height:420px;
+	}
+	.contact-hero-section h2{
+		font-size:34px;
+	}
+	.contact-hero-section h3{
+		font-size:28px;
+	}
+	.contact-hero-section p{
+		font-size:18px;
+	}
+
+	.contact-available-section h3{
+		font-size:28px;
+	}
+}
+
+
+/* CONTACT AVAILABLE SECTION */
+.contact-available-section{
+	margin-top: 60px;
+}
+.contact-available-section h3{
+	font-size:34px;
+}
+.contact-work{
+	background:white;
+	border-top:5px solid #eee;
+	border-radius:12px;
+	padding:25px 30px;
+	margin-bottom:30px;
+	box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+.contact-work h4{
+	margin-top:0;
+	font-size:24px;
+	color:#111;
+}
+.contact-work p{
+	font-size:16px;
+	line-height:1.7;
+	color:#555;
+}
+.contact-work.av{
+	border-top:5px solid #2196F3;
+}
+.contact-work.apps{
+	border-top:5px solid #3DDC84;
+}
+.contact-work.network{
+	border-top:5px solid #9C27B0;
+}
+.contact-tags{
+	display:flex;
+	flex-wrap:wrap;
+	gap:15px;
+	justify-content:center;
+	max-width:1100px;
+	margin:auto;
+}
+.contact-tags span{
+	background:white;
+	padding:14px 18px;
+	border-radius:30px;
+	font-size:15px;
+	font-weight:bold;
+	box-shadow:0 4px 12px rgba(0,0,0,0.08);
+	border:1px solid #ddd;
+	transition:0.2s;
+}
+.contact-tags span:hover{
+	transform:translateY(-3px);
+	background:#f7f7f7;
+}
+
+/* FINAL CTA */
+.contact-cta-box{
+	max-width:600px;
+	margin:auto;
+	background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+		url('img/DPCproducciones_Cine.jpg');
+	background-size:cover; background-position:center;
+	color:white;
+	padding:20px 10px;
+	border-radius:20px;
+	box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+.contact-cta-box h3{
+	font-size:34px;
+	margin-bottom:20px;
+}
+.contact-cta-box h4{
+	font-size:24px;
+	margin-bottom:20px;
+}
+.contact-cta-box p{
+	font-size:18px;
+	line-height:1.7;
+	color:#eee;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+	.contact-work{
+		padding:22px;
+	}
+	.contact-work h4{
+		font-size:22px;
+	}
+	.contact-tags span{
+		width:100%;
+		font-size:14px;
+		padding:12px 15px;
+	}
+	.contact-cta-box h3{
+		font-size:28px;
+	}
+}
+
+
+/* CATEGORY COLORS */
+.sound{
+	border-left-color:#2196F3;
+}
+.video{
+	border-left-color:#FFC107;
+}
+.apps{
+	border-left-color:#3DDC84;
+}
+.network{
+	border-left-color:#9C27B0;
+}
+.lighting{
+	border-left-color:#F44336;
 }
 </style>
 </head>
@@ -84,59 +299,177 @@
 	</header>
 
 	<main>
-		<h2>Contact</h2>
-		<div class="grid">
-			<div class="card">
-				<h3>Email</h3>
-				<p>If you have questions, suggestions, technical issues, or hiring proposals related to our audiovisual content or Android applications, feel free to contact us. We will try to respond as soon as possible.</p>
-				<p><b>✉ Email:<br><a href="mailto:info_dpcproducciones@yahoo.com">info_dpcproducciones@yahoo.com</b></a></p><br>
-			</div><!--/card-->
-		</div><!--/grid-->
-		<br>
-		<div class="grid">
-			<div class="card">
-				<h3>About us</h3>
-				<p><img id="DPCproducciones_Cine" src="img/DPCproducciones_Cine.jpg" alt="DPCproducciones film logo"></p>
-				<p>DPCproducciones develops Android applications, audiovisual technical resources, tutorials, and professional educational content focused on education, culture, and entertainment.</p>
-				<br><p><img id="TecnicoAV_LogoCircle" src="img/TecnicoAV_LogoCircle.jpg" alt="DPCproducciones TecnicoAV logo"></p>
-				<p>TecnicoAV is the audiovisual technical division of DPCproducciones, focused on professional audiovisual systems, live events, sound engineering, lighting, broadcast workflows, stage technology, QLab programming, AV maintenance, and technical training resources.</p>
-			</div><!--/card-->
-		</div><!--/grid-->
-		
-		<!--<div class="info-block">
-			<h4>Future website structure</h4>
-			<p>This website will progressively include tutorials, technical documentation, workflow guides, practical examples, audiovisual resources, and educational content for students and professionals, designed as a long-term professional platform.</p>
-			<p>The objective is to organize audiovisual technical knowledge in a clear and scalable way.</p>
-			<p>Future sections will include:</p>
-			<p>✔ Technical tutorials.<br>
-				✔ Educational articles.<br>
-				✔ Live sound workflows.<br>
-				✔ Broadcast documentation.<br>
-				✔ Equipment guides.<br>
-				✔ Video tutorials and YouTube integration.<br>
-				✔ Downloadable technical resources.<br>
-				✔ Android technical tools and utilities.</p>
+	<!-- HERO CONTACT -->
+	<section class="contact-hero-section">
+		<h2>Professional Audiovisual Technician<br>Web & Android Developer</h2>
+		<p>Professional audiovisual services, technical training, multimedia production.<br>Web & Android app development, and technical educational projects.</p>
+		<br><p><a class="button contact" href="mailto:info_dpcproducciones@yahoo.com">📩 CONTACT EMAIL</a></p>
+		<h3>Professional Technical Services</h3>
+		<p>DPCproducciones combines audiovisual technology, technical training, multimedia production and software development.</p>
+		<p>Available for work and freelance collaborations, technical support, live events, educational projects and software development.</p><br>
+		<div class="contact-hero-blur">
+			<p>🏠 <b><u>Location:</u></b> Madrid, Spain.<br><span style="font-size:18px">Available for projects in Madrid and nearby areas.</span></p>
+			<p style="font-size:18px">🌎 Remote work available for software development, online training and multimedia projects.</p><br>
 		</div>
+	</section>
+
+
+	<!-- SERVICES -->
+	<section class="contact-services-section">
+		<h3>What I Do</h3>
+		<p style="font-size:26px;"><b>Professional Experience</b></p><br>
+		<div class="contact-grid">
+			<!-- AUDIOVISUAL -->
+			<div class="contact-card sound">
+				<h4>🎬 Broadcast & Audiovisual Technology</h4>
+				<p>Professional experience in television, live events, audiovisual maintenance and technical broadcast environments.</p>
+				<ul class="contact-service-list">
+					<li>✔ TV studios and mobile units.</li>
+					<li>✔ Live events sound / camera technician.</li>
+					<li>✔ Concerts and live productions.</li>
+					<li>✔ Theatre and stage performances.</li>
+					<li>✔ Conferences and corporate AV.</li>
+					<li>✔ Operation of image and sound equipment.</li>
+					<li>✔ Mixing consoles and audio / video recording.</li>
+					<li>✔ Microphones and wireless systems.</li>
+					<li>✔ Video / audio editing and post-production.</li>
+					<li>✔ Electronic AV maintenance and troubleshooting.</li>
+					<li>✔ Broadcast multimedia technical support.</li>
+					<li>✔ Freelance audiovisual technician work.</li>
+				</ul>
+			</div><!--/card-->
+			<!-- SOFTWARE -->
+			<div class="contact-card apps">
+				<h4>💻 Software & Multimedia Development</h4>
+				<p>Web page and Android application development, multimedia tools, and educational projects.</p>
+				<ul class="contact-service-list">
+					<li>✔ Google Play Android app developer.</li>
+					<li>✔ Web design, front-end development.</li>
+					<li>✔ HTML, CSS and JavaScript.</li>
+					<li>✔ Java C C++ C# and Android Studio.</li>
+					<li>✔ Photoshop, Premier and After Effects.</li>
+					<li>✔ QLab, Protools, Audacity and audio software.</li>
+					<li>✔ Cinema4D, Unity3D and game applications.</li>
+					<li>✔ Educational multimedia platforms.</li>
+					<li>✔ Interactive audiovisual productions.</li>
+					<li>✔ Arduino and robotics projects.</li>
+				</ul>
+			</div><!--/card-->
+			<!-- TRAINING -->
+			<div class="contact-card network">
+				<h4>🎓 Technical Training & Education</h4>
+				<p>Technical educational content and professional training for audiovisual and software technologies.</p>
+				<ul class="contact-service-list">
+					<li>✔ Certified professional trainer.</li>
+					<li>✔ Audiovisual technology training.</li>
+					<li>✔ Educational technical resources.</li>
+					<li>✔ Camera operation lessons.</li>
+					<li>✔ Sound engineering lessons.</li>
+					<li>✔ Audio Video production and editing.</li>
+					<li>✔ Broadcast and AV workflows.</li>
+					<li>✔ Multimedia production workshops.</li>
+					<li>✔ Software and programming basics.</li>
+					<li>✔ Online technical classes.</li>
+					<li>✔ Beginner and advanced support.</li>
+					<li>✔ Personalized technical guidance.</li>
+				</ul>
+			</div><!--/card-->
+		</div><!--/contact-grid-->
 		
-		<div class="info-block">
-			<h4>YouTube & Training integration</h4>
-			<p>This website is being prepared to integrate future audiovisual tutorials and educational videos from the DPCproducciones YouTube channel.</p>
-			<p>Each tutorial category will later connect directly with technical videos, practical demonstrations, and audiovisual learning resources.</p>
+		<!--<h3>Professional Experience</h3>
+		<div class="contact-grid">
+			<div class="contact-card">
+				<h4>📺 Broadcast Television</h4>
+				<p><b>Telemadrid</b> — Technical Electronic Officer</p>
+				<p>Work in television studios, mobile units, radio links, audiovisual maintenance, CCU operation, robotic cameras, live broadcasts and technical broadcast systems.</p>
+				<hr>
+				<p><b>Movistar+</b> — Technical Maintenance</p>
+				<p>Maintenance of professional broadcast systems, AVID editing rooms, EVS servers, ISIS/NEXIS environments, continuity systems and television technical infrastructure.</p>
+			</div>
+			<div class="contact-card">
+				<h4>🎭 Live Events & Multimedia</h4>
+				<p>Experience in live sound, stage lighting, theatre productions, multimedia editing and audiovisual post-production.</p>
+				<p>Work with concerts, conventions, theatre environments and technical audiovisual setups.</p>
+			</div>
 		</div>-->
+	</section>
+
+
+	<!-- AVAILABLE -->
+	<section class="contact-available-section">
+		<h3>Available For</h3>
 		
-		<br><hr width="60%">
-		<div class="donate-box">
-			<h3>☕ Support This Project</h3>
-			<p>If TécnicoAV and DPCproducciones resources helped you, consider supporting future development and free tutorials.</p>
-			<p><a class="donate-button"
-				href="https://paypal.me/DPCproducciones" target="_blank" rel="noopener noreferrer">
-				<img id="Paypal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAq1BMVEX///+FlMQAAIMAAIc1TqKyuthve7QAHo4AKZEAJ5AAI49jdLNFWKUACIqTn8n4+fwAJI0AIozq7PQAZdAAeOcAcd8AP7Xf5fLHzuQAgPAAjv8Aiv9j0P/r+P+jrdEAFIwAjP9/ibwAOaAAhv9BtP9czP+56P8AR7Aqov9gzf+M2f8AWcUwp/8Yedggnf9Uxf+q4v9Qr+hj0/+M2v9Uaa4YTKfV8f8wc746jtEyKvaVAAAA2klEQVR4AcTQRRYCMRAA0cBYJ7jbuOMu9z8ZESQ0jzV/W9Em/1SpGoppfUfbAYkyo0awOoOnRhO1FlCAdkcxUOwavPX60mA4+ozjBo+TqTJzPaLzAwCYTENp6rotPUYO0PjRktTNcvRYWqg4K+fzbKFHh0J7OZ1xyWqOYssAYOtys9mstq6IO/RYZ39wubmQ6c+1AqBsO1fQRtLkEQ7PlB2J7uQAO4vocosL+WAyYFcRvVarhScbGEb15s4zl2DciFvM5+gyjZuhV+oyvvPyo3kZ9zPm3H3USq4AAckc4OeYq5wAAAAASUVORK5CYII=" alt="Paypal logo">
-				<br>Donate with PayPal
-			</a></p>
-			<br><p>This project is independently developed and maintained. Your support helps creating more free audiovisual resources.</p>
+		<div class="contact-work av">
+			<h4>👨‍🎨 Audiovisual Working</h4>
+			<div class="contact-tags">
+				<span>🎥 Camera Operator</span>
+				<span>🎧 Sound Technician</span>
+				<span>📸 Photographer</span>
+				<span>📹 Video Editing</span>
+				<span>📼 Post-production</span>
+				<span>💡 Lighting Technician</span>
+				<span>🔊 Concerts & Live Events</span>
+				<span>🎭 Theatre Productions</span>
+				<span>🛠 AV Maintenance</span>
+				<span>📡 Broadcast Support</span>
+				<span>📺 TV Studio Technician</span>
+				<span>🚚 Mobile Unit Technician</span>
+				<span>📻 Radio Technician</span>
+				<span>💻 Multimedia Projects</span>
+				<span>🔌 Streaming Operator</span>
+				<span>🎬 Audiovisual Equipment</span>
+			</div>
 		</div>
-		<hr width="60%"><br>
-		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
+		
+		<div class="contact-work apps">
+			<h4>👨‍💻 Computer Programming</h4>
+			<div class="contact-tags">
+				<span>🌐 Web Designer</span>
+				<span>📱 Android Developer</span>
+				<span>💻 Front-end Developer</span>
+				<span>🧩 Multimedia Development</span>
+				<span>⌨ HTML CSS JavaScript PHP</span>
+				<span>📝 Java C C++ C#</span>
+				<span>🎮 Unity3D Video Games</span>
+				<span>🤖 Arduino Programming</span>
+				<span>🛠 Web Maintenance</span>
+				<span>🧠 Interactive Projects</span>
+				<span>🧪 Software Testing</span>
+				<span>🌎 Remote Collaborations</span>
+			</div>
+		</div>
+		
+		<div class="contact-work network">
+			<h4>👨‍🏫 Technical Training & Education</h4>
+			<div class="contact-tags">
+				<span>🎬 AV Technical Trainer</span>
+				<span>🎥 Audiovisual Courses</span>
+				<span>📚 Educational Content Creator</span>
+				<span>🌐 Web Design Courses</span>
+				<span>💻 Programming Lessons</span>
+				<span>🎮 Unity3D Video Games</span>
+				<span>🤖 Arduino Robotics</span>
+				<span>🎓 Online Teacher</span>
+				<span>🧩 Multimedia Workshops</span>
+				<span>👌 Personalized Support</span>
+				<span>👨‍🎓 Technical Mentoring</span>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- CONTACT -->
+	<section class="contact-cta">
+		<div class="contact-cta-box">
+			<h3> Contact</h3>
+			<h4>👨‍💼 Let's Work Together</h4>
+			<p>Available for audiovisual productions, broadcast support, multimedia technical training, Web & Android development.</p>
+			<p>Based in Madrid, Spain.</p>
+			<p><a class="button contact" href="mailto:info_dpcproducciones@yahoo.com">📩 Contact Email</a></p>
+			<p>If you are interested in collaborations, technical services, training or software development, feel free to contact me.</p>
+		</div><br>
+	</section>
+	<br>
 	</main>
 </div><!--/container-->
 
