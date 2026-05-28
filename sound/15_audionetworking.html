@@ -52,144 +52,6 @@
  width:100%;
  max-width:400px;
 }
-
-/* MENU */
-.menu {
- position: absolute;
- top: 15px;
- left: 15px;
-}
-.menu button{
- width: 40px;
- height: 40px;
- font-size: 20px;
-}
-
-/* TOP BAR */
-.top-tech-bar{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	margin:10px 15px;
-}
-
-/* MENU BUTTON */
-.tech-menu-button{
-	background:transparent;
-	border:none;
-	font-size:28px;
-	cursor:pointer;
-	color:#555;
-	padding:5px 10px;
-	border-radius:8px;
-	transition:0.2s;
-}
-.tech-menu-button:hover{
-	background:#e3f2fd;
-	color:#1976D2;
-}
-
-/* OVERLAY */
-.tech-overlay{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:rgba(0,0,0,0.4);
-	opacity:0;
-	visibility:hidden;
-	transition:0.3s;
-	z-index:9998;
-}
-.tech-overlay.open{
-	opacity:1;
-	visibility:visible;
-}
-
-/* SIDEBAR */
-.tech-sidebar{
-	position:fixed;
-	top:0;
-	left:-340px;
-	width:320px;
-	height:100%;
-	background:white;
-	overflow-y:auto;
-	z-index:9999;
-	box-shadow:5px 0 20px rgba(0,0,0,0.25);
-	transition:left 0.3s ease;
-}
-.tech-sidebar.open{
-	left:0;
-}
-
-/* HEADER */
-.tech-sidebar-header{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	padding:15px;
-	background:#1976D2;
-	color:white;
-}
-.tech-sidebar-header h3{
-	margin:0;
-}
-
-/* CLOSE BUTTON */
-.close-sidebar{
-	width: 100%;
-	background:none;
-	border:none;
-	color:white;
-	font-size:24px;
-	cursor:pointer;
-}
-
-/* ACCORDION */
-.accordion{
-	width:100%;
-	background:#f1f1f1;
-	color:#222;
-	cursor:pointer;
-	padding:14px;
-	border: 1px solid white;
-	text-align:left;
-	font-size:16px;
-	font-weight:bold;
-	transition:0.2s;
-}
-.accordion:hover{
-	background:#2196F3;
-	color:white;
-}
-.accordion.active{
-	background:#1976D2;
-	color:white;
-}
-
-/* PANELS */
-.panel{
-	max-height:0;
-	overflow:hidden;
-	transition:max-height 0.3s ease;
-	background:#fafafa;
-}
-.panel a{
-	display:block;
-	padding:10px 18px;
-	text-decoration:none;
-	color:#333;
-	border-bottom:1px solid #eee;
-	transition:0.2s;
-}
-.panel a:hover{
-	background:#e3f2fd;
-	color:#1976D2;
-	padding-left:25px;
-}
-
 </style>
 </head>
 
@@ -267,11 +129,6 @@
 			</div>
 		</div>
 
-		<div class="tech-menu">
-			<a class="active" href="00_sound.html">Sound</a>
-			<a href="../video/video.html">Video</a>
-		</div>
-
 		<h2>Audio Networking and Dante</h2>
 		<p>Modern professional audio systems increasingly rely on digital networking technologies instead of traditional analog multicore cabling.</p>
 		<p>Audio networking allows hundreds of audio channels to travel through standard Ethernet cables with extremely low latency and high reliability.</p>
@@ -301,7 +158,7 @@
 		<div class="info-block">
 			<h3>Basic Dante Workflow</h3>
 			<p>In a typical Dante system:</p>
-			<ul>
+			<ul class="ul">
 				<li>Microphones connect to a digital stage box.</li>
 				<li>The stage box converts analog audio into digital network streams.</li>
 				<li>Audio travels through Ethernet switches.</li>
@@ -319,7 +176,7 @@
 			<p>It provides a matrix view where transmitters and receivers can be connected with simple clicks.</p>
 			<p>Understanding Dante Controller is essential for professional AV technicians.</p>
 			<p>The software allows engineers to:</p>
-			<ul>
+			<ul class="ul">
 				<li>Route audio channels.</li>
 				<li>Monitor device status.</li>
 				<li>Check clock synchronization.</li>
@@ -345,7 +202,7 @@
 			<p>Latency is the delay between audio entering a system and being reproduced.</p>
 			<p>Dante systems are designed to operate with extremely low latency values.</p>
 			<p>Typical Dante latency settings include:</p>
-			<ul>
+			<ul class="ul">
 				<li>0.25 ms</li>
 				<li>0.5 ms</li>
 				<li>1 ms</li>
@@ -361,7 +218,7 @@
 			<p>Professional Dante systems should use high-quality managed switches.</p>
 			<p>Although small systems sometimes operate with unmanaged switches, professional productions require greater control over network behavior.</p>
 			<p>Important switch features include:</p>
-			<ul>
+			<ul class="ul">
 				<li>Gigabit Ethernet ports.</li>
 				<li>Quality of Service (QoS).</li>
 				<li>IGMP Snooping.</li>
@@ -376,7 +233,7 @@
 			<h3>Primary and Secondary Networks</h3>
 			<p>Professional Dante systems often use redundant networks.</p>
 			<p>Each Dante device may have:</p>
-			<ul>
+			<ul class="ul">
 				<li>A primary network connection.</li>
 				<li>A secondary backup network.</li>
 			</ul>
@@ -388,7 +245,7 @@
 			<h3>Common Problems</h3>
 			<p>Audio networking is powerful, but troubleshooting requires both audio and IT knowledge.</p>
 			<p>Common real-world problems include:</p>
-			<ul>
+			<ul class="ul">
 				<li>Incorrect IP addressing.</li>
 				<li>Clock synchronization conflicts.</li>
 				<li>Network loops.</li>
@@ -402,7 +259,7 @@
 		<div class="info-block">
 			<h3>Important Tips</h3>
 			<p>When working with network audio systems for the first time:</p>
-			<ul>
+			<ul class="ul">
 				<li>Label all devices clearly.</li>
 				<li>Keep network diagrams.</li>
 				<li>Use certified Ethernet cables.</li>
@@ -439,9 +296,6 @@
 		</div>
 
 		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
-
-		<br><hr width="60%"><br>
-		<p>👉 <a href="https://dpcproducciones.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit our news website on Blogger.</a></p><br>
 	</main>
 </div><!--/container-->
 
