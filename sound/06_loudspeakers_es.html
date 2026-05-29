@@ -48,8 +48,29 @@
 #TecnicoAV_Logo {
  width:100%;
  max-width:200px;
+ margin:15px;
  border-radius:5px;
  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#Loudspeaker, #PoweredLoudspeakerConnections {
+ width:100%;
+ max-width:200px;
+}
+#SoundWaveLoudspeaker {
+ width:100%;
+ max-width:600px;
+}
+#SoundEmissionLoudspeaker, #ElectronicFilter  {
+ width:100%;
+ max-width:300px;
+}
+#PassiveCrossover, #ActiveCrossover{
+ width:100%;
+ max-width:350px;
+}
+#PoweredLoudspeakerConnections {
+ width:100%;
+ max-width:270px;
 }
 </style>
 </head>
@@ -125,23 +146,24 @@
 			<span>Altavoces</span>
 		</div>
 
-		<h2>Altavoces y<br>diseño de sistemas de sonido</h2>
+		<p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		<h2>📢 Altavoces</h2>
 		<p>Los altavoces son la etapa final de la cadena de audio y desempeñan un papel fundamental en los sistemas de refuerzo de sonido.</p>
 		<p>Un sistema de altavoces bien diseñado puede proporcionar una cobertura de sonido clara y potente para el público en conciertos, teatros, conferencias y entornos de retransmisión.</p>
 		<p>Los ingenieros de audio profesionales deben comprender la acústica, la cobertura de los altavoces, la seguridad, el montaje y la gestión de la señal.</p>
 
 		<div class="info-block">
 			<h3>¿Qué es un altavoz?</h3>
-			<p>Un altavoz convierte las señales de audio eléctricas en energía acústica que los oyentes pueden oír.</p>
+			<p>Un altavoz convierte las señales eléctricas de audio en energía acústica que los oyentes pueden oír.</p>
 			<p>El transductor del altavoz mueve el aire mediante un diafragma vibratorio conectado a una bobina móvil y un conjunto magnético.</p>
-			<p>Los sistemas de sonido profesionales pueden incluir:</p>
-			<ul class="ul">
-				<li>Altavoces principales.</li>
-				<li>Subwoofers.</li>
-				<li>Monitores de escenario.</li>
-				<li>Altavoces de refuerzo.</li>
-				<li>Sistemas de retardo.</li>
-			</ul>
+			<p><img id="Loudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/archive/7/79/20140307144146%21Loudspeaker-bass.png" alt="Elementos internos de un altavoz"></p>
+			<ol class="ul">
+				<li>Imán.</li>
+				<li>Bobina móvil.</li>
+				<li>Suspensión.</li>
+				<li>Diafragma o membrana.</li>
+			</ol>
+			<p><img id="SoundWaveLoudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Sound_wave_animation.gif" alt="Onda sonora de altavoz"></p>
 		</div>
 
 		<div class="info-block">
@@ -153,19 +175,22 @@
 				<li>Los woofers reproducen bajas frecuencias.</li>
 				<li>Los subwoofers reproducen frecuencias muy bajas.</li>
 			</ul>
-			<p>Los sistemas profesionales combinan varios transductores para reproducir todo el espectro de audio.</p>
 		</div>
 
 		<div class="info-block">
 			<h3>Filtros Crossovers</h3>
-			<p>Los filtros divisores de frecuencia distribuyen las frecuencias de audio entre los diferentes altavoces.</p>
-			<p>Sin filtros divisores de frecuencia, los altavoces intentarían reproducir frecuencias fuera de su rango de funcionamiento óptimo.</p>
-			<p>Existen dos tipos principales:</p>
-			<ul class="ul">
-				<li>Filtros divisores de frecuencia pasivos.</li>
-				<li>Crossovers digitales activos.</li>
-			</ul>
-			<p>Los sistemas profesionales modernos suelen utilizar procesadores digitales de gestión de altavoces.</p>
+			<p>Los filtros divisores de frecuencia Crossovers distribuyen las frecuencias de audio entre los diferentes altavoces.</p>
+			<p>Sin estos filtros electrónicos, los altavoces intentarían reproducir frecuencias fuera de su rango de funcionamiento óptimo.</p>
+			<p><img id="ElectronicFilter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/B-W_Matrix3MkII_FotoWeiche.jpg/330px-B-W_Matrix3MkII_FotoWeiche.jpg" alt="Filtro pasivo de 2 vías, agudos y graves"></p>
+			<br><p>Existen dos tipos principales:</p>
+			<p>- Filtros divisores de frecuencia pasivos.<br>
+				<img id="PassiveCrossover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Passive_Crossover.svg/330px-Passive_Crossover.svg.png" alt="Filtro pasivo divisor de frecuencias"></p>
+			<p>- Filtros divisores de frecuencia activos,<br>integrados en altavoces autoamplificados.<br>
+				<img id="ActiveCrossover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Active_Crossover.svg/330px-Active_Crossover.svg.png" alt="Filtro activo divisor de frecuencias"></p>
+			<br><p>Los sistemas de altavoces profesionales combinan varios filtros y altavoces para reproducir todo el espectro de audio.</p>
+			<p>El fabricante diseña los filtros electrónicos precisos para ecualizar y proteger a cada tipo de altavoz.</p>
+			<p><img id="PoweredLoudspeakerConnections" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Connexions_DSC_1779EC.jpg/330px-Connexions_DSC_1779EC.jpg" alt="Powered loudspeaker connections">
+				<img id="SoundEmissionLoudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/3-way_horn_speaker.png" alt="Emisión sonora de un altavoz de 2 vías, agudos y graves"></p>
 		</div>
 
 		<div class="info-block">
@@ -192,6 +217,7 @@
 			</ul>
 			<p>Los técnicos deben asegurarse de que las salidas del amplificador sean compatibles con la impedancia de los altavoces.</p>
 			<p>Una adaptación de impedancia incorrecta puede provocar el sobrecalentamiento de los amplificadores o dañar los equipos.</p>
+			<!--<p><img id="SeriesParallel" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Series_parallel_xover.GIF" alt="Series Parallel"></p>-->
 		</div>
 
 		<div class="info-block">
@@ -272,9 +298,7 @@
 		<div class="lesson-nav">
 			<a href="05_mixingconsoles_es.html">← Anterior</a>
 			<a href="07_acoustics_es.html">Siguiente →</a>
-		</div>
-
-		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		</div><br>
 	</main>
 </div><!--/container-->
 
@@ -284,7 +308,7 @@
 
 <footer>
 	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
-	<a href="../privacy_es.html">Política de Privacidad</a> | <a href="../contact_es.html">Contacto</a> | <a href="https://www.paypal.com/donate/?business=dpcproducciones@yahoo.es" target="_blank" rel="noopener noreferrer">Donar</a>
+	<a href="../privacy_es.html">Privacidad</a> | <a href="../contact_es.html">Contacto</a> | <a href="https://www.paypal.com/donate/?business=dpcproducciones@yahoo.es" target="_blank" rel="noopener noreferrer">Donar</a>
 </footer>
 
 <script type="text/javascript">
