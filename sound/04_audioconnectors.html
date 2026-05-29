@@ -48,6 +48,7 @@
 #TecnicoAV_Logo {
  width:100%;
  max-width:200px;
+ margin:15px;
  border-radius:5px;
  box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
@@ -62,6 +63,14 @@
 #Jack {
  width:100%;
  max-width:200px;
+}
+#PatchPanel {
+ width:100%;
+ max-width:500px;
+}
+#MulticoreCables {
+ width:100%;
+ max-width:400px;
 }
 </style>
 </head>
@@ -137,17 +146,18 @@
 			<span>Audio Connectors</span>
 		</div>
 
-		<h2>Audio Connectors<br>and Signal Routing</h2>
-		<p>Audio systems depend on reliable signal connections.</p>
-		<p>Understanding connectors, cables and routing systems is essential for live events, studios, broadcast facilities and audiovisual installations.</p>
+		<p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		<h2>🔌 Audio Connectors<br>and Signal Routing</h2>
+		<p>Audio systems depend on reliable connections.</p>
+		<p>Knowing the types of cables and connectors is essential for good signal quality.</p>
 
 		<div class="info-block">
 			<h3>Why audio connectors are important</h3>
-			<p>Every professional audio system uses connectors and cables to transport signals between microphones, mixers, processors, amplifiers and loudspeakers.</p>
+			<p>All professional audio systems use cables and connectors to carry signals.</p>
 			<p>Incorrect cable selection or bad routing can introduce noise, hum, interference or signal loss.</p>
-			<p>A professional technician must understand:</p>
+			<p>A professional technician should know:</p>
 			<ul class="ul">
-				<li>Signal and connector types.</li>
+				<li>Types of cables and connectors.</li>
 				<li>Balanced and unbalanced connections.</li>
 				<li>Patch panels and routing systems.</li>
 				<li>Stage boxes and multicore cable systems.</li>
@@ -158,90 +168,58 @@
 			<h3>Balanced and unbalanced audio</h3>
 			<p>Professional audio systems usually use balanced connections because they reduce electrical interference and noise.</p>
 			<p>Balanced cables use:</p>
-			<ul style="list-style-type: none;">
-				<li>+ Positive signal.</li>
-				<li>- Negative signal.</li>
-				<li>⏚ Ground.</li>
-			</ul>
+			<p>+ Positive signal.<br>- Negative signal.<br>⏚ Ground.</p>
 			<p>Unbalanced connections are more sensitive to noise over long distances.</p>
-			<p>Examples:</p>
-			<ul style="list-style-type: none;">
-				<li>XLR = balanced.</li>
-				<li>TRS jack = balanced.</li>
-				<li>TS jack = unbalanced.</li>
-				<li>RCA = unbalanced.</li>
-			</ul>
+			<p><u>Examples:</u><br>XLR = balanced.<br>TRS jack = balanced.<br>TS jack = unbalanced.<br>RCA = unbalanced.</p>
 		</div>
 
 		<div class="info-block">
 			<h3>XLR connectors</h3>
 			<p>The XLR connector is one of the most common professional audio connectors.</p>
 			<p><img id="XLR" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Xlr-connectors.jpg/330px-Xlr-connectors.jpg" alt="Audio XLR connector"></p>
-			<p>It is mainly used for:</p>
-			<ul class="ul">
-				<li>Microphones.</li>
-				<li>Mixing consoles.</li>
-				<li>Audio processors.</li>
-				<li>Balanced line signals.</li>
-			</ul>
+			<p>It is mainly used for balanced line signals.</p>
 			<p>XLR connectors are durable, lock securely and provide excellent noise rejection.</p>
-			<p>Standard 3-pin XLR:</p>
-			<ul style="list-style-type: none;">
-				<li>Pin 1 = Ground</li>
-				<li>Pin 2 = Positive (+)</li>
-				<li>Pin 3 = Negative (-)</li>
-			</ul>
 			<p><img id="XLRdiagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/XLR_pinouts.svg/330px-XLR_pinouts.svg.png" alt="XLR diagram"></p>
+			<p>Standard 3-pin XLR:</p>
+			<p>Pin 1 = Ground ⏚<br>Pin 2 = Positive (+)<br>Pin 3 = Negative (-)</p>
 		</div>
 
 		<div class="info-block">
 			<h3>Jack connectors (TS and TRS)</h3>
-			<p>Jack connectors are widely used in musical instruments, mixers, headphones and studio equipment.</p>
-			<br><p>TS (Tip-Sleeve)<br>=<br>unbalanced mono.</p>
-			<br><p>TRS (Tip-Ring-Sleeve)<br>=<br>balanced mono or stereo.</p>
+			<p>Jack connectors are widely used in musical instruments, mixers, headphones and audio equipment.</p>
 			<br><p><img id="Jack" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Phone-connectors-labeled.jpg/250px-Phone-connectors-labeled.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Jack connector"></p>
-			<p>TRS connectors are often used for:</p>
-			<ul class="ul">
-				<li>Balanced line signals.</li>
-				<li>Headphones.</li>
-				<li>Insert cables.</li>
-			</ul>
+			<p>TS (Tip-Sleeve)<br>=<br>unbalanced mono.</p>
+			<br><p>TRS (Tip-Ring-Sleeve)<br>=<br>balanced mono or stereo.</p>
 		</div>
 
 		<div class="info-block">
 			<h3>Speakon connectors</h3><!--<p>PowerCon</p>-->
 			<p>Speakon connectors are designed for loudspeaker connections.</p>
 			<p>They are safer and more reliable than traditional jack speaker connectors.</p>
-			<p><img id="Speakon" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Neutrik_Speakon.jpg" alt="Audio Speakon connector"></p>
-			<p>Speakon connectors are commonly used in:</p>
-			<ul class="ul">
-				<li>PA systems.</li>
-				<li>Concert sound systems.</li>
-				<li>Subwoofers.</li>
-				<li>Amplifier racks.</li>
-			</ul>
 			<p>They can handle high power levels safely.</p>
+			<p><img id="Speakon" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Neutrik_Speakon.jpg" alt="Audio Speakon connector"></p>
+			<p>Speakon connectors are used in PA systems, subwoofers, and amplifier racks.</p>
 		</div>
 
 		<div class="info-block">
 			<h3>Patch panels and routing</h3>
-			<p>Patch panels organize audio connections inside studios, theatres and broadcast installations.</p>
-			<p>They allow technicians to reroute signals quickly without reconnecting equipment directly.</p>
+			<p>Patch panels organize audio connections in audiovisual installations.</p>
+			<p>They allow technicians to route signals quickly without reconnecting equipment directly. Large productions may use hundreds of routed signals simultaneously.</p>
+			<p><img id="PatchPanel" src="https://cdn.shopify.com/s/files/1/0345/0847/2455/files/Patchbay_Avex_Honolulu_Studios.jpg" alt="Patch panel"></p>
 			<p>Patch panels improve:</p>
 			<ul class="ul">
+				<li>Signal distribution.</li>
 				<li>Workflow efficiency.</li>
 				<li>Equipment organization.</li>
 				<li>Maintenance.</li>
-				<li>Signal troubleshooting.</li>
 			</ul>
-			<p>Large productions may use hundreds of routed signals simultaneously.</p>
 		</div>
 
 		<div class="info-block">
 			<h3>Stage boxes and multicore systems</h3>
 			<p>Live productions often use stage boxes connected through multicore cables.</p>
 			<p>This allows many microphone signals to travel from the stage to the mixing console using a single cable system.</p>
-			<p>Modern productions may also use digital audio networking systems such as Dante or AVB.</p>
+			<p><img id="MulticoreCables" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Audio_multicore_cable_with_XLR_connectors_and_stage_box.JPG/960px-Audio_multicore_cable_with_XLR_connectors_and_stage_box.JPG" alt="Multicore cables"></p>
 			<p>Cable management and labeling are critical in professional environments.</p>
 		</div>
 
@@ -264,9 +242,7 @@
 		<div class="lesson-nav">
 			<a href="03_microphones.html">← Prev Topic</a>
 			<a href="05_mixingconsoles.html">Next Topic →</a>
-		</div>
-
-		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		</div><br>
 	</main>
 </div><!--/container-->
 
