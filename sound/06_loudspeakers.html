@@ -48,8 +48,25 @@
 #TecnicoAV_Logo {
  width:100%;
  max-width:200px;
+ margin:15px;
  border-radius:5px;
  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+#Loudspeaker {
+ width:100%;
+ max-width:200px;
+}
+#SoundWaveLoudspeaker {
+ width:100%;
+ max-width:600px;
+}
+#SoundEmissionLoudspeaker, #PoweredLoudspeakerConnections, #ElectronicFilter {
+ width:100%;
+ max-width:300px;
+}
+#PassiveCrossover, #ActiveCrossover{
+ width:100%;
+ max-width:350px;
 }
 </style>
 </head>
@@ -125,23 +142,24 @@
 			<span>Loudspeakers</span>
 		</div>
 
-		<h2>Loudspeakers and<br>Sound System Design</h2>
+		<p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		<h2>📢 Loudspeakers</h2>
 		<p>Loudspeakers are the final stage of the audio chain and play a critical role in sound reinforcement systems.</p>
 		<p>A well-designed speaker system can provide clear and powerful sound coverage for audiences in concerts, theatres, conferences and broadcast environments.</p>
 		<p>Professional audio engineers must understand acoustics, speaker coverage, safety, rigging and signal management.</p>
 
 		<div class="info-block">
 			<h3>What is a loudspeaker?</h3>
-			<p>A loudspeaker converts electrical audio signals into acoustic energy that can be heard by listeners.</p>
+			<p>A loudspeaker converts electrical audio signals into acoustic energy that listeners can hear.</p>
 			<p>The loudspeaker driver moves air using a vibrating diaphragm connected to a voice coil and magnet assembly.</p>
-			<p>Professional sound systems may include:</p>
-			<ul class="ul">
-				<li>Main speakers.</li>
-				<li>Subwoofers.</li>
-				<li>Stage monitors.</li>
-				<li>Fill speakers.</li>
-				<li>Delay systems.</li>
-			</ul>
+			<p><img id="Loudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/archive/7/79/20140307144146%21Loudspeaker-bass.png" alt="Loudspeaker internal elements"></p>
+			<ol class="ul">
+				<li>Magnet.</li>
+				<li>Voice coil.</li>
+				<li>Suspension.</li>
+				<li>Diaphragm.</li>
+			</ol>
+			<p><img id="SoundWaveLoudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Sound_wave_animation.gif" alt="Loudspeaker sound wave"></p>
 		</div>
 
 		<div class="info-block">
@@ -153,19 +171,23 @@
 				<li>Woofers reproduce low frequencies.</li>
 				<li>Subwoofers reproduce very low frequencies.</li>
 			</ul>
-			<p>Professional systems combine multiple drivers to reproduce the full audio spectrum.</p>
+			
 		</div>
 
 		<div class="info-block">
 			<h3>Crossovers</h3>
-			<p>Crossovers divide audio frequencies between different speaker drivers.</p>
-			<p>Without crossovers, speakers would attempt to reproduce frequencies outside their optimal operating range.</p>
-			<p>There are two main types:</p>
-			<ul class="ul">
-				<li>Passive crossovers.</li>
-				<li>Active digital crossovers.</li>
-			</ul>
-			<p>Modern professional systems commonly use digital speaker management processors.</p>
+			<p>Frequency divider filters (crossovers) distribute audio frequencies among different loudspeakers.</p>
+			<p>Without these electronic filters, loudspeakers would attempt to reproduce frequencies outside their optimal operating range.</p>
+			<p><img id="ElectronicFilter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/B-W_Matrix3MkII_FotoWeiche.jpg/330px-B-W_Matrix3MkII_FotoWeiche.jpg" alt="Electronic filter"></p>
+			<br><p>There are two main types:</p>
+			<p>- Passive crossovers.<br>
+				<img id="PassiveCrossover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Passive_Crossover.svg/330px-Passive_Crossover.svg.png" alt="Passive crossover filter"></p>
+			<p>- Active crossovers,<br>integrated into self-powered loudspeakers.<br>
+				<img id="ActiveCrossover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Active_Crossover.svg/330px-Active_Crossover.svg.png" alt="Active crossover filter"></p>
+			<br><p>Professional speaker systems combine various filters and loudspeakers to reproduce the entire audio spectrum.</p>
+			<p>The manufacturer designs precise electronic filters to equalize and protect each type of loudspeaker.</p>
+			<p><img id="PoweredLoudspeakerConnections" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Connexions_DSC_1779EC.jpg/330px-Connexions_DSC_1779EC.jpg" alt="Powered loudspeaker connections">
+				<img id="SoundEmissionLoudspeaker" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/3-way_horn_speaker.png" alt="Sound emission from a 2-way speaker, tweeter and woofer"></p>
 		</div>
 
 		<div class="info-block">
@@ -271,9 +293,7 @@
 		<div class="lesson-nav">
 			<a href="05_mixingconsoles.html">← Prev Topic</a>
 			<a href="07_acoustics.html">Next Topic →</a>
-		</div>
-
-		<br><p><img id="TecnicoAV_Logo" src="../img/TecnicoAV_Logo.jpg" alt="DPCproducciones TecnicoAV"></p>
+		</div><br>
 	</main>
 </div><!--/container-->
 
@@ -283,7 +303,7 @@
 
 <footer>
 	<p>Copyright © <script>document.write(new Date().getFullYear());</script> DPCproducciones</p>
-	<a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a> | <a href="https://www.paypal.com/donate/?business=dpcproducciones@yahoo.es" target="_blank" rel="noopener noreferrer">Donate</a>
+	<a href="../privacy.html">Privacy</a> | <a href="../contact.html">Contact</a> | <a href="https://www.paypal.com/donate/?business=dpcproducciones@yahoo.es" target="_blank" rel="noopener noreferrer">Donate</a>
 </footer>
 
 <script type="text/javascript">
